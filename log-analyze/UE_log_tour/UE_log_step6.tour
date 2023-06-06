@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 460 (call init_NR_UE())",
+      "line": 460      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/init_NR_UE() Line 1088 (callee)",
+      "line": 1088      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/init_NR_UE() Line 1097 (call nr_l2_init_ue())",
+      "line": 1097      
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/main_ue_nr.c",
+      "description": "openair2/LAYER2/NR_MAC_UE/main_ue_nr.c Line 47 (callee)",
+      "line": 47      
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/main_ue_nr.c",
+      "description": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 85 (PRINT)",
+      "line": 85      
+    }
+  ]
+}

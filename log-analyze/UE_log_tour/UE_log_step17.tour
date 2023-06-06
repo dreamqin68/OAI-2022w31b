@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 521 (call init_symbol_rotation())",
+      "line": 521      
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "openair1/PHY/MODULATION/nr_modulation.c  Line 606 (callee)",
+      "line": 606      
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "openair1/PHY/MODULATION/nr_modulation.c/init_symbol_rotation() Line 644 (PRINT)",
+      "line": 644      
+    }       
+  ]
+}

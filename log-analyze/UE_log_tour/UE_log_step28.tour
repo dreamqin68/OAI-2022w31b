@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())",
+      "line": 526      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 335 (callee)",
+      "line": 335      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())",
+      "line": 369      
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)",
+      "line": 80      
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106      
+    }       
+  ]
+}

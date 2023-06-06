@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "UE_log_step3",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 448 (call init_opt())",
+      "line": 448      
+    },
+    {
+      "file": "openair2/UTIL/OPT/probe.c",
+      "description": "openair2/UTIL/OPT/probe.c/init_opt() Line 542 (callee)",
+      "line": 542      
+    },
+    {
+      "file": "openair2/UTIL/OPT/probe.c",
+      "description": "openair2/UTIL/OPT/probe.c/init_opt() Line 556 (PRINT)",
+      "line": 556      
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 523 (call init_nr_ue_vars())",
+      "line": 523      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 153 (callee)",
+      "line": 153      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/init_nr_ue_vars() Line 178 (call init_N_TA_offset())",
+      "line": 178      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init_ue.c",
+      "description": "openair1/PHY/INIT/nr_init_ue.c Line 531 (callee)",
+      "line": 531      
+    }, 
+    {
+      "file": "openair1/PHY/INIT/nr_init_ue.c",
+      "description": "openair1/PHY/INIT/nr_init_ue.c/init_N_TA_offset() Line 567 (PRINT)",
+      "line": 567      
+    }       
+  ]
+}

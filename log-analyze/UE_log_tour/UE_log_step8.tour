@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 468 (call init_pdcp())",
+      "line": 468      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 379 (callee)",
+      "line": 379      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main()/init_pdcp() Line 393 (call nr_pdcp_module_init())",
+      "line": 393      
+    },
+    {
+      "file": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c",
+      "description": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 558 (callee)",
+      "line": 558      
+    },
+    {
+      "file": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c",
+      "description": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/nr_pdcp_module_init() Line 592 (call netlink_init_tun())",
+      "line": 592      
+    },
+    {
+      "file": "openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c",
+      "description": "openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c line 135 (callee)",
+      "line": 135      
+    },
+    {
+      "file": "openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c",
+      "description": "openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c/netlink_init_tun() line 150 (PRINT)",
+      "line": 150      
+    }
+  ]
+}
