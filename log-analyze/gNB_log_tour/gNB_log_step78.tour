@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 623 (call get_options())",
+      "line": 623      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c  Line 375 (callee)",
+      "line": 375      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/get_options() Line 391 (call set_parallel_conf())",
+      "line": 391      
+    },
+    {
+      "file": "executables/thread-common.h",
+      "description": "executables/thread-common.h Line 8 (callee)",
+      "line": 8      
+    },
+    {
+      "file": "executables/thread-common.h",
+      "description": "executables/thread-common.h/set_parallel_conf() Line 18 (PRINT)",
+      "line": 18      
+    }                     
+  ]
+}

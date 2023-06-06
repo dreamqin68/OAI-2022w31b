@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 776 (call init_eNB_afterRU())",
+      "line": 776      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 515 (callee)",
+      "line": 515      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_eNB_afterRU() Line 526 (call phy_init_nr_gNB())",
+      "line": 526      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 476 (callee)",
+      "line": 476     
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c/phy_init_nr_gNB() Line 624 (call init_nr_transport())",
+      "line": 624      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 1001 (callee)",
+      "line": 1001     
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c/init_nr_transport() Line 1021 (PRINT)",
+      "line": 1021     
+    }                     
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 776 (call init_eNB_afterRU())",
+      "line": 776      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 515 (callee)",
+      "line": 515      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_eNB_afterRU() Line 560 (call init_gNB_Tpool())",
+      "line": 560      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 421 (callee)",
+      "line": 421      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_gNB_Tpool() Line 429 (PRINT)",
+      "line": 429      
+    }                      
+  ]
+}

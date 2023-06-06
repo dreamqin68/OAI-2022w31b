@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 656 (call init_opt())",
+      "line": 656      
+    },
+    {
+      "file": "openair2/UTIL/OPT/probe.c",
+      "description": "openair2/UTIL/OPT/probe.c/init_opt() Line 542 (callee)",
+      "line": 542      
+    },
+    {
+      "file": "openair2/UTIL/OPT/probe.c",
+      "description": "openair2/UTIL/OPT/probe.c/init_opt() Line 556 (PRINT)",
+      "line": 556      
+    }  
+  ]
+}

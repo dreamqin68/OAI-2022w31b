@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 623 (call get_options())",
+      "line": 623      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 375 (callee)",
+      "line": 375      
+    },  
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/get_options() Line 378 (call get_common_options())",
+      "line": 378      
+    },    
+    {
+      "file": "executables/softmodem-common.c",
+      "description": "executables/softmodem-common.c/get_common_options() Line 87 (callee)",
+      "line": 87      
+    },
+    {
+      "file": "executables/softmodem-common.c",
+      "description": "executables/softmodem-common.c/get_common_options() Line 152 (call nfapi_setmode())",
+      "line": 152      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi.c",
+      "description": "nfapi/oai_integration/nfapi.c/nfapi_setmode() Line 74 (callee)",
+      "line": 74      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi.c",
+      "description": "nfapi/oai_integration/nfapi.c/nfapi_setmode() Line 76 (call nfapi_logmode())",
+      "line": 76      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi.c",
+      "description": "nfapi/oai_integration/nfapi.c/nfapi_logmode() Line 66 (callee)",
+      "line": 66      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi.c",
+      "description": "nfapi/oai_integration/nfapi.c/nfapi_logmode() Line 67 (PRINT)",
+      "line": 67      
+    }       
+  ]
+}

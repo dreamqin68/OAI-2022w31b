@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 621 (call set_latency_target())",
+      "line": 621      
+    },
+    {
+      "file": "common/utils/system.c",
+      "description": "common/utils/system.c Line 395 (callee)",
+      "line": 395      
+    },  
+    {
+      "file": "common/utils/system.c",
+      "description": "common/utils/system.c/set_latency_target() Line 411 (PRINT)",
+      "line": 411      
+    }       
+  ]
+}

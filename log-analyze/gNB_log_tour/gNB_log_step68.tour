@@ -1,0 +1,61 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 357 (call rrc_gnb_task())",
+      "line": 357      
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 4055 (callee) ",
+      "line": 4055      
+    },    
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/rrc_gnb_task() Line 4186 (call openair_rrc_gNB_configuration())",
+      "line": 4186      
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 199 (callee)",
+      "line": 199      
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/openair_rrc_gNB_configuration() Line 227 (call init_NR_SI())",
+      "line": 227      
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 147 (callee)",
+      "line": 147      
+    }, 
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/init_NR_SI() Line 155 (call do_SIB1_NR())",
+      "line": 155      
+    }, 
+    {
+      "file": "openair2/RRC/NR/MESSAGES/asn1_msg.c",
+      "description": "openair2/RRC/NR/MESSAGES/asn1_msg.c Line 309 (callee)",
+      "line": 309      
+    }, 
+    {
+      "file": "openair2/RRC/NR/MESSAGES/asn1_msg.c",
+      "description": "openair2/RRC/NR/MESSAGES/asn1_msg.c/do_SIB1_NR() Line 433 (PRINT)",
+      "line": 433      
+    }                   
+  ]
+}

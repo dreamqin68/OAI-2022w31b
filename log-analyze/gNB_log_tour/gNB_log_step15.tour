@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 302 (call itti_create_task())",
+      "line": 302      
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp Line 320 (callee)",
+      "line": 320      
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp Line 325 (PRINT)",
+      "line": 325     
+    }    
+  ]
+}

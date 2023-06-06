@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 350 (call gNB_app_task())",
+      "line": 350      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c Line 138 (callee)",
+      "line": 138      
+    },    
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c/gNB_app_task() Line 176 (call configure_nr_rrc())",
+      "line": 176      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c Line 62 (callee)",
+      "line": 62      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c/configure_nr_rrc() Line 70 (call RCconfig_NRRRC())",
+      "line": 70      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c Line 1031 (callee)",
+      "line": 1031      
+    }, 
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/RCconfig_NRRRC() Line 1256 (PRINT)",
+      "line": 1256      
+    }      
+  ]
+}

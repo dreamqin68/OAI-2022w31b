@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 738 (call init_NR_RU())",
+      "line": 738      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1909 (callee)",
+      "line": 1909      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_NR_RU() Line 1975 (call set_function_spec_param())",
+      "line": 1975      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_NR_RU() Line 1752 (callee)",
+      "line": 1752      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/set_function_spec_param() Line 1821 (PRINT)",
+      "line": 1821      
+    }                         
+  ]
+}

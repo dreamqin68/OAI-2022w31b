@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 776 (call init_eNB_afterRU())",
+      "line": 776      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 515 (callee)",
+      "line": 515      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_eNB_afterRU() Line 526 (call phy_init_nr_gNB())",
+      "line": 526      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 476 (callee)",
+      "line": 476      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c/phy_init_nr_gNB() Line 511 (call load_nrLDPClib())",
+      "line": 511      
+    },
+    {
+      "file": "openair1/PHY/CODING/nrLDPC_load.c",
+      "description": "openair1/PHY/CODING/nrLDPC_load.c Line 51 (callee)",
+      "line": 51      
+    },
+    {
+      "file": "openair1/PHY/CODING/nrLDPC_load.c",
+      "description": "openair1/PHY/CODING/nrLDPC_load.c/load_nrLDPClib() Line 64 (call load_module_version_shlib())",
+      "line": 64      
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "common/utils/load_module_shlib.c Line 118 (callee)",
+      "line": 118      
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "common/utils/load_module_shlib.c/load_module_version_shlib() Line 169 (PRINT)",
+      "line": 169      
+    }                      
+  ]
+}

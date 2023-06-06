@@ -1,0 +1,61 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 350 (call gNB_app_task())",
+      "line": 350      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c Line 138 (callee)",
+      "line": 138      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c/gNB_app_task() Line 157 (call RCconfig_NR_L1())",
+      "line": 157      
+    },   
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 669 (callee)",
+      "line": 669      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 772 (call l1_north_init_gNB())",
+      "line": 772      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 50 (callee)",
+      "line": 50      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c/l1_north_init_gNB() Line 61 (call NR_IF_Module_init())",
+      "line": 61      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 527 (callee)",
+      "line": 527      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 529 (PRINT))",
+      "line": 529      
+    }  
+  ]
+}

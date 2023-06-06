@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 608 (call load_configmodule())",
+      "line": 608      
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "common/config/config_load_configmodule.c Line 184 (callee)",
+      "line": 184      
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "common/config/config_load_configmodule.c  Line 300 (call load_config_sharedlib())",
+      "line": 300      
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "common/config/config_load_configmodule.c Line 48 (callee)",
+      "line": 48      
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "common/config/config_load_configmodule.c/load_config_sharedlib() Line 69 (PRINT)",
+      "line": 69      
+    }                     
+  ]
+}

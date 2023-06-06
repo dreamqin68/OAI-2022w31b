@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 653 (call get_cpu_freq_GHz())",
+      "line": 653      
+    },
+    {
+      "file": "common/utils/time_meas.c",
+      "description": "common/utils/time_meas.c Line 39 (callee)",
+      "line": 39      
+    },
+    {
+      "file": "common/utils/time_meas.c",
+      "description": "common/utils/time_meas.c/get_cpu_freq_GHz() Line 49 (PRINT)",
+      "line": 49      
+    }                    
+  ]
+}

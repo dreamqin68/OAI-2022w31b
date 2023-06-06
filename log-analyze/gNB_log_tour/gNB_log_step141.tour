@@ -1,0 +1,61 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 738 (call init_NR_RU())",
+      "line": 738      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1909 (callee)",
+      "line": 1909      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_NR_RU() Line 1977 (call init_RU_proc())",
+      "line": 1977      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1519 (callee)",
+      "line": 1519     
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_RU_proc() Line 1538 (call ru_thread())",
+      "line": 1538      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1247 (callee)",
+      "line": 1247      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/ru_thread() Line 1279 (call nr_init_frame_parms())",
+      "line": 1279      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_parms.c",
+      "description": "openair1/PHY/INIT/nr_parms.c Line 239 (callee)",
+      "line": 239      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_parms.c",
+      "description": "openair1/PHY/INIT/nr_parms.c/nr_init_frame_parms() Line 262 (call set_scs_parameters())",
+      "line": 262      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_parms.c",
+      "description": "openair1/PHY/INIT/nr_parms.c Line 138 (callee)",
+      "line": 138      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_parms.c",
+      "description": "openair1/PHY/INIT/nr_parms.c/set_scs_parameters() Line 196 (PRINT)",
+      "line": 196      
+    }                        
+  ]
+}

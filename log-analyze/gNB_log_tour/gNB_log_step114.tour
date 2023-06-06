@@ -1,0 +1,61 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 669 (call RCconfig_NR_L1())",
+      "line": 669      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c Line 669 (callee)",
+      "line": 669      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 763 (call configure_nr_nfapi_pnf())",
+      "line": 763      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi_pnf.c",
+      "description": "nfapi/oai_integration/nfapi_pnf.c Line 2145 (callee)",
+      "line": 2145      
+    },    
+    {
+      "file": "nfapi/oai_integration/nfapi_pnf.c",
+      "description": "nfapi/oai_integration/nfapi_pnf.c/configure_nr_nfapi_pnf() Line 2171 (call nr_config_request())",
+      "line": 2171      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi_pnf.c",
+      "description": "nfapi/oai_integration/nfapi_pnf.c Line 995 (callee)",
+      "line": 995      
+    },
+    {
+      "file": "nfapi/oai_integration/nfapi_pnf.c",
+      "description": "nfapi/oai_integration/nfapi_pnf.c/nr_config_request() Line 1066 (call nr_phy_config_request())",
+      "line": 1066      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 921 (callee)",
+      "line": 921     
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c/nr_phy_config_request() Line 968 (call init_symbol_rotation())",
+      "line": 968      
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "openair1/PHY/MODULATION/nr_modulation.c Line 606 (callee)",
+      "line": 606      
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "openair1/PHY/MODULATION/nr_modulation.c/init_symbol_rotation() Line 644 (PRINT)",
+      "line": 644      
+    }           
+  ]
+}

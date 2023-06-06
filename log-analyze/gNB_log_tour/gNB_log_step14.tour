@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 669 (call RCconfig_NR_L1())",
+      "line": 669      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 669 (callee)",
+      "line": 669      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 772 (call l1_north_init_gNB())",
+      "line": 772      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 50 (callee)",
+      "line": 50      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 63 (PRINT)",
+      "line": 63     
+    }    
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 738 (call init_NR_RU())",
+      "line": 738      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1909 (callee)",
+      "line": 1909      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_NR_RU() Line 1977 (call init_RU_proc())",
+      "line": 1977      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1519 (callee)",
+      "line": 1519     
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_RU_proc() Line 1538 (call ru_thread())",
+      "line": 1538      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1247 (callee)",
+      "line": 1247      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/ru_thread() Line 1308 (PRINT)",
+      "line": 1308      
+    }                       
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 364 (call gtpv1uTask())",
+      "line": 364      
+    },     
+    {
+      "file": "openair3/ocp-gtpu/gtp_itf.cpp",
+      "description": "openair3/ocp-gtpu/gtp_itf.cpp Line 1205 (callee)",
+      "line": 1205      
+    },
+    {
+      "file": "openair3/ocp-gtpu/gtp_itf.cpp",
+      "description": "openair3/ocp-gtpu/gtp_itf.cpp/gtpv1uTask() Line 1263 (call gtpv1Init())",
+      "line": 1263      
+    },
+    {
+      "file": "openair3/ocp-gtpu/gtp_itf.cpp",
+      "description": "openair3/ocp-gtpu/gtp_itf.cpp Line 552 (callee)",
+      "line": 552      
+    },    
+    {
+      "file": "openair3/ocp-gtpu/gtp_itf.cpp",
+      "description": "openair3/ocp-gtpu/gtp_itf.cpp/gtpv1Init() Line 562 (PRINT) ",
+      "line": 562      
+    }                    
+  ]
+}

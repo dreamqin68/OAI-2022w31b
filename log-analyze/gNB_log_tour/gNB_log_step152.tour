@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 738 (call init_NR_RU())",
+      "line": 738      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1909 (callee)",
+      "line": 1909      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_NR_RU() Line 1977 (call init_RU_proc())",
+      "line": 1977      
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c Line 1519 (callee)",
+      "line": 1519     
+    },
+    {
+      "file": "executables/nr-ru.c",
+      "description": "executables/nr-ru.c/init_RU_proc() Line 1546 (call nr_init_feptx_thread())",
+      "line": 1546      
+    },
+    {
+      "file": "openair1/SCHED_NR/nr_ru_procedures.c",
+      "description": "openair1/SCHED_NR/nr_ru_procedures.c Line 438 (callee)",
+      "line": 438     
+    },
+    {
+      "file": "openair1/SCHED_NR/nr_ru_procedures.c",
+      "description": "openair1/SCHED_NR/nr_ru_procedures.c/nr_init_feptx_thread() Line 451 (PRINT)",
+      "line": 451      
+    }                      
+  ]
+}

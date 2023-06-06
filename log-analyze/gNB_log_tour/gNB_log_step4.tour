@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 654 (call itti_init())",
+      "line": 654
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp/itti_init() Line 360 (callee)",
+      "line": 360
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp/itti_init() Line 367 (call itti_create_queue())",
+      "line": 367
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp/itti_create_queue() Line 339 (callee)",
+      "line": 339
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp/itti_create_queue() Line 347 (PRINT)",
+      "line": 347
+    }    
+  ]
+}

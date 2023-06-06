@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292      
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 350 (call gNB_app_task())",
+      "line": 350      
+    },
+    {
+      "file": "openair2/GNB_APP/gnb_app.c",
+      "description": "openair2/GNB_APP/gnb_app.c Line 138 (callee)",
+      "line": 138      
+    },    
+    {
+      "file": "openair2/GNB_APP/gnb_config.c",
+      "description": "openair2/GNB_APP/gnb_config.c/gNB_app_task() Line 163 (call l1_north_init_gNB())",
+      "line": 163      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c Line 50 (callee)",
+      "line": 50      
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init.c",
+      "description": "openair1/PHY/INIT/nr_init.c/l1_north_init_gNB() Line 63 (PRINT)",
+      "line": 63      
+    }      
+  ]
+}
