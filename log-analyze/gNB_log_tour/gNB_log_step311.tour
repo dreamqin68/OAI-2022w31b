@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 338 (call ngap_gNB_task())",
+      "line": 338     
+    },
+    {
+      "file": "openair3/NGAP/ngap_gNB.c",
+      "description": "openair3/NGAP/ngap_gNB.c Line 406 (callee)",
+      "line": 406
+    },
+    {
+      "file": "openair3/NGAP/ngap_gNB.c",
+      "description": "openair3/NGAP/ngap_gNB.c/ngap_gNB_task() Line 410 (call ngap_gNB_process_itti_msg())",
+      "line": 410     
+    },
+    {
+      "file": "openair3/NGAP/ngap_gNB.c",
+      "description": "openair3/NGAP/ngap_gNB.c Line 277 (callee)",
+      "line": 2396
+    },
+    {
+      "file": "openair3/NGAP/ngap_gNB.c",
+      "description": "openair3/NGAP/ngap_gNB.c/ngap_gNB_process_itti_msg() Line 329 (call ngap_gNB_initial_ctxt_resp())",
+      "line": 329     
+    },
+    {
+      "file": "openair3/NGAP/ngap_gNB_nas_procedures.c",
+      "description": "openair3/NGAP/ngap_gNB_nas_procedures.c Line 597 (callee)",
+      "line": 597
+    },
+    {
+      "file": "openair3/NGAP/ngap_gNB_nas_procedures.c",
+      "description": "openair3/NGAP/ngap_gNB_nas_procedures.c/ngap_gNB_initial_ctxt_resp() Line 817 (PRINT)",
+      "line": 817
+    }                       
+  ]
+}

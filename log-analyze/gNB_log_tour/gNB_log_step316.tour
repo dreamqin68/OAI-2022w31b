@@ -1,0 +1,61 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 729 (call init_gNB())",
+      "line": 729     
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 565 (callee)",
+      "line": 565
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_gNB() Line 592 (call NR_IF_Module_init())",
+      "line": 592      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "executables/nr-ru.c Line 527 (callee)",
+      "line": 527
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/NR_IF_Module_init() Line 538 (call NR_UL_indication())",
+      "line": 538      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 408 (callee)",
+      "line": 408    
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/NR_UL_indication() Line 494 (call gNB_dlsch_ulsch_scheduler())",
+      "line": 494      
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler.c Line 115 (callee)",
+      "line": 115
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler.c/gNB_dlsch_ulsch_scheduler() Line 183 (call dump_mac_stats())",
+      "line": 183
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/main.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/main.c Line 82 (callee)",
+      "line": 82
+    }, 
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/main.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/main.c/dump_mac_stats() Line 133 (PRINT)",
+      "line": 133
+    }                   
+  ]
+}

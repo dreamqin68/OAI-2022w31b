@@ -1,0 +1,71 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 729 (call init_gNB())",
+      "line": 729     
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 565 (callee)",
+      "line": 565
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_gNB() Line 592 (call NR_IF_Module_init())",
+      "line": 592      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "executables/nr-ru.c Line 527 (callee)",
+      "line": 527
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/NR_IF_Module_init() Line 538 (call NR_UL_indication())",
+      "line": 538      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 408 (callee)",
+      "line": 408    
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/NR_UL_indication() Line 465 (call handle_nr_uci())",
+      "line": 465      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 98 (callee)",
+      "line": 98    
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/handle_nr_uci() Line 125 (call handle_nr_uci_pucch_0_1())",
+      "line": 125      
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c Line 883 (callee)",
+      "line": 883
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c/handle_nr_uci_pucch_0_1() Line 900 (call find_harq())",
+      "line": 900
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c Line 839 (callee)",
+      "line": 839
+    }, 
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_uci.c/find_harq() Line 856 (PRINT)",
+      "line": 856
+    }                     
+  ]
+}

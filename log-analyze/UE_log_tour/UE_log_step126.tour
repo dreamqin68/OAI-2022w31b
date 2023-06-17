@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 449 (call load_nrLDPClib())",
+      "line": 449      
+    },
+    {
+      "file": "openair1/PHY/CODING/nrLDPC_load.c",
+      "description": "openair1/PHY/CODING/nrLDPC_load.c Line 51 (callee)",
+      "line": 51     
+    },  
+    {
+      "file": "openair1/PHY/CODING/nrLDPC_load.c",
+      "description": "openair1/PHY/CODING/nrLDPC_load.c/load_nrLDPClib() Line 64 (call load_module_version_shlib())",
+      "line": 64     
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "common/utils/load_module_shlib.c Line 118 (callee)",
+      "line": 118     
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "common/utils/load_module_shlib.c/load_module_version_shlib() line 139 (PRINT)",
+      "line": 139     
+    }       
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 729 (call init_gNB())",
+      "line": 729     
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 565 (callee)",
+      "line": 565
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_gNB() Line 592 (call NR_IF_Module_init())",
+      "line": 592      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "executables/nr-ru.c Line 527 (callee)",
+      "line": 527
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/NR_IF_Module_init() Line 538 (call NR_UL_indication())",
+      "line": 538      
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 408 (callee)",
+      "line": 408    
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/NR_UL_indication() Line 468 (call handle_nr_ulsch())",
+      "line": 468     
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c Line 162 (callee)",
+      "line": 162
+    },
+    {
+      "file": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_PHY_INTERFACE/NR_IF_Module.c/handle_nr_ulsch() Line 211 (call handle_nr_ul_harq())",
+      "line": 211
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_ulsch.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_RA.c Line 415 (callee)",
+      "line": 415
+    }, 
+    {
+      "file": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_ulsch.c",
+      "description": "openair2/LAYER2/NR_MAC_gNB/gNB_scheduler_ulsch.c/handle_nr_ul_harq() Line 437 (PRINT)",
+      "line": 437
+    }                    
+  ]
+}

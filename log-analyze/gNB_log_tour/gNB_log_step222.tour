@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 776 (call init_eNB_afterRU()) ",
+      "line": 776     
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 515 (callee)",
+      "line": 515
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_eNB_afterRU() Line 560 (call init_gNB_Tpool())",
+      "line": 560      
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-ru.c Line 421 (callee)",
+      "line": 421
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/init_gNB_Tpool() Line 448 (call rx_func())",
+      "line": 448     
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c Line 124 (callee)",
+      "line": 124    
+    },
+    {
+      "file": "executables/nr-gnb.c",
+      "description": "executables/nr-gnb.c/rx_func() Line 216 (call L1_nr_prach_procedures())",
+      "line": 216      
+    },
+    {
+      "file": "openair1/SCHED_NR/nr_prach_procedures.c",
+      "description": "openair1/SCHED_NR/nr_prach_procedures.c Line 104 (callee)",
+      "line": 104
+    },
+    {
+      "file": "openair1/SCHED_NR/nr_prach_procedures.c",
+      "description": "openair1/SCHED_NR/nr_prach_procedures.c/L1_nr_prach_procedures() Line 176 (PRINT)",
+      "line": 176
+    }                   
+  ]
+}

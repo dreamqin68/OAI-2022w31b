@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 503 (call get_band())",
+      "line": 503      
+    },
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "common/utils/nr/nr_common.c Line 133 (callee)",
+      "line": 133     
+    },  
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "common/utils/nr/nr_common.c/get_band() line 159 (PRINT)",
+      "line": 159     
+    }          
+  ]
+}

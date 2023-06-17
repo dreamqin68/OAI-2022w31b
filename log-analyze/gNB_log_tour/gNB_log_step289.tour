@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 357 (call rrc_gnb_task())",
+      "line": 357     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 4055 (callee)",
+      "line": 4055     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/rrc_gnb_task() Line 4233 (call rrc_gNB_process_NGAP_INITIAL_CONTEXT_SETUP_REQ())",
+      "line": 4233     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB_NGAP.c",
+      "description": "openair2/RRC/NR/rrc_gNB_NGAP.c Line 465 (callee)",
+      "line": 465     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB_NGAP.c",
+      "description": "openair2/RRC/NR/rrc_gNB_NGAP.c/rrc_gNB_process_NGAP_INITIAL_CONTEXT_SETUP_REQ() Line 568 (call process_gNB_security_key())",
+      "line": 568     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB_NGAP.c",
+      "description": "openair2/RRC/NR/rrc_gNB_NGAP.c Line 271 (callee)",
+      "line": 271
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB_NGAP.c",
+      "description": "openair2/RRC/NR/rrc_gNB_NGAP.c/process_gNB_security_key() Line 290 (PRINT)",
+      "line": 290    
+    }                         
+  ]
+}

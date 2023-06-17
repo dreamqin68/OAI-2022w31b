@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 357 (call rrc_gnb_task())",
+      "line": 357     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 4055 (callee)",
+      "line": 4055     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/rrc_gnb_task() Line 4159 (call rrc_gNB_decode_dcch())",
+      "line": 4159     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 2396 (callee)",
+      "line": 2396
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/rrc_gNB_decode_dcch() Line 2606 (PRINT)",
+      "line": 2606     
+    }                       
+  ]
+}

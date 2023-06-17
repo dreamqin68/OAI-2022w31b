@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())",
+      "line": 537      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 1102 (callee)",
+      "line": 1102      
+    },  
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())",
+      "line": 1111     
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 826 (callee)",
+      "line": 826      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())",
+      "line": 897      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 483 (callee)",
+      "line": 483      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())",
+      "line": 561      
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)",
+      "line": 204      
+    }, 
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 448 (PRINT)",
+      "line": 448    
+    }
+  ]
+}

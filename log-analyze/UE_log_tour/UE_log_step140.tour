@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())",
+      "line": 544      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 187 (callee)",
+      "line": 187      
+    },  
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())",
+      "line": 193      
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)",
+      "line": 2419      
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())",
+      "line": 2469    
+    }, 
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)",
+      "line": 1398      
+    },    
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1455 (call nr_rrc_ue_process_RadioBearerConfig())",
+      "line": 1455     
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)",
+      "line": 2006      
+    }, 
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2183 (PRINT)",
+      "line": 2183      
+    }   
+  ]
+}

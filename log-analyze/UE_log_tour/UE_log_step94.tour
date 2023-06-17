@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())",
+      "line": 544      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 187 (callee)",
+      "line": 187      
+    },  
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())",
+      "line": 193      
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)",
+      "line": 2419      
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())",
+      "line": 2448     
+    }, 
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)",
+      "line": 1126      
+    }, 
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() Line 1231 (call nr_rrc_ue_generate_RRCSetupRequest())",
+      "line": 1231     
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 1741 (callee)",
+      "line": 1741      
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_generate_RRCSetupRequest() (PRINT)",
+      "line": 1767     
+    }    
+  ]
+}

@@ -1,0 +1,1211 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "UE_log",
+  "steps": [
+    {
+      "file": "nfapi/oai_integration/nfapi.c",
+      "description": "[ENB_APP]   nfapi running mode: MONOLITHIC \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 436 (call get_common_options())\r\n-> executables/softmodem-common.c/get_common_options() Line 87 (callee)\r\n-> executables/softmodem-common.c/get_common_options() Line 152 (call nfapi_setmode())\r\n-> nfapi/oai_integration/nfapi.c/nfapi_setmode() Line 74 (callee)\r\n-> nfapi/oai_integration/nfapi.c/nfapi_setmode() Line 76 (call nfapi_logmode())\r\n-> nfapi/oai_integration/nfapi.c/nfapi_logmode() Line 66 (callee)\r\n-> nfapi/oai_integration/nfapi.c/nfapi_logmode() Line 67 (PRINT)\r\n",
+      "line": 67,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 9,
+          "character": 65
+        }
+      }
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "[ITTI]   Starting itti queue: TASK_UNKNOWN as task 0...43\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 446 (call itti_init())\r\n-> common/utils/ocp_itti/intertask_interface.cpp/itti_init() Line 360 (callee)\r\n-> common/utils/ocp_itti/intertask_interface.cpp/itti_init() Line 367 (call itti_create_queue())\r\n-> common/utils/ocp_itti/intertask_interface.cpp/itti_create_queue() Line 339 (callee)\r\n-> common/utils/ocp_itti/intertask_interface.cpp/itti_create_queue() Line 347 (PRINT)\r\n",
+      "line": 347
+    },
+    {
+      "file": "openair2/UTIL/OPT/probe.c",
+      "description": "[OPT]   OPT disabled \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 448 (call init_opt())\r\nopenair2/UTIL/OPT/probe.c/init_opt() Line 542 (callee)\r\nopenair2/UTIL/OPT/probe.c/init_opt() Line 556 (PRINT)",
+      "line": 556,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 54
+        }
+      }
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[HW]   Version: Branch:  Abrev. Hash:  Date:\r\n(\"executables/main_ru.c\" have the same command)",
+      "line": 458
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [UE0] Applying default macMainConfig \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 460 (call init_NR_UE())\r\nexecutables/nr-ue.c/init_NR_UE() Line 1088 (callee)\r\nexecutables/nr-ue.c/init_NR_UE() Line 1097 (call nr_l2_init_ue())\r\nopenair2/LAYER2/NR_MAC_UE/main_ue_nr.c Line 47 (callee)\r\nopenair2/LAYER2/NR_MAC_UE/main_ue_nr.c Line 57 (call nr_ue_init_mac())\r\nopenair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 144 (callee)\r\nopenair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 149 (PRINT)",
+      "line": 149
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/main_ue_nr.c",
+      "description": "[MAC]   Running without CellGroupConfig\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 460 (call init_NR_UE())\r\nexecutables/nr-ue.c/init_NR_UE() Line 1088 (callee)\r\nexecutables/nr-ue.c/init_NR_UE() Line 1097 (call nr_l2_init_ue())\r\nopenair2/LAYER2/NR_MAC_UE/main_ue_nr.c Line 47 (callee)\r\nopenair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 85 (PRINT)",
+      "line": 85
+    },
+    {
+      "file": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c",
+      "description": "[PDCP]   pdcp init,usegtp usenetlink\r\n// also might be in \"openair2/LAYER2/PDCP_v10.1.0/pdcp.c\"\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 468 (call init_pdcp())\r\nexecutables/nr-uesoftmodem.c/main() Line 379 (callee)\r\nexecutables/nr-uesoftmodem.c/main()/init_pdcp() Line 393 (call nr_pdcp_module_init())\r\nopenair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 558 (callee)\r\nopenair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/nr_pdcp_module_init() Line 582 (PRINT)",
+      "line": 582
+    },
+    {
+      "file": "openair1/SIMULATION/ETH_TRANSPORT/netlink_init.c",
+      "description": "[PDCP]   TUN: Opened socket oaitun_ue1 with fd nas_sock_fd[0]=93 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 468 (call init_pdcp())\r\nexecutables/nr-uesoftmodem.c/main() Line 379 (callee)\r\nexecutables/nr-uesoftmodem.c/main()/init_pdcp() Line 393 (call nr_pdcp_module_init())\r\nopenair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 558 (callee)\r\nopenair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/nr_pdcp_module_init() Line 592 (call netlink_init_tun())\r\nopenair1/SIMULATION/ETH_TRANSPORT/netlink_init.c line 135 (callee)\r\nopenair1/SIMULATION/ETH_TRANSPORT/netlink_init.c/netlink_init_tun() line 150 (PRINT)",
+      "line": 150
+    },
+    {
+      "file": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c",
+      "description": "[PDCP]   UE pdcp will use tun interface\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 468 (call init_pdcp())\r\nexecutables/nr-uesoftmodem.c/main() Line 379 (callee)\r\nexecutables/nr-uesoftmodem.c/main()/init_pdcp() Line 393 (call nr_pdcp_module_init())\r\nopenair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 558 (callee)\r\nopenair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/nr_pdcp_module_init() Line 596 (PRINT)",
+      "line": 596
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   Set UE mode 6, UE_fo_compensation 0, UE_scan_carrier 0, UE_no_timing_correction 0, chest-freq 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 499 (call set_options())\r\nexecutables/nr-uesoftmodem.c/  Line 272 (callee)\r\nexecutables/nr-uesoftmodem.c/set_options() Line 318 (PRINT)",
+      "line": 318
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   Set UE nb_rx_antenna 1, nb_tx_antenna 1, threequarter_fs 0, ssb_start_subcarrier 516\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 499 (call set_options())\r\nexecutables/nr-uesoftmodem.c/  Line 272 (callee)\r\nexecutables/nr-uesoftmodem.c/set_options() Line 328 (PRINT)",
+      "line": 328
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_parms.c",
+      "description": "[PHY]   SA init parameters. DL freq 3619200000 UL offset 0 SSB numerology 1 N_RB_DL 106\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 505 (call nr_init_frame_parms_ue_sa())\r\nopenair1/PHY/INIT/nr_parms.c  Line 386 (callee)\r\nopenair1/PHY/INIT/nr_parms.c  Line 388 (PRINT)",
+      "line": 388
+    },
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[23].band = 48)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 505 (call nr_init_frame_parms_ue_sa())\r\nopenair1/PHY/INIT/nr_parms.c  Line 386 (callee)\r\nopenair1/PHY/INIT/nr_parms.c/nr_init_frame_parms_ue_sa() Line 401 (call get_frame_type())\r\ncommon/utils/nr/nr_common.c Line 291 (callee)\r\ncommon/utils/nr/nr_common.c/get_frame_type() Line 294 (call get_delta_duplex())\r\ncommon/utils/nr/nr_common.c Line 307 (callee)\r\ncommon/utils/nr/nr_common.c/get_delta_duplex() Line 313 (PRINT)",
+      "line": 313
+    },
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "[NR_MAC]   NR band 48, duplex mode TDD, duplex spacing = 0 KHz\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 505 (call nr_init_frame_parms_ue_sa())\r\nopenair1/PHY/INIT/nr_parms.c  Line 386 (callee)\r\nopenair1/PHY/INIT/nr_parms.c/nr_init_frame_parms_ue_sa() Line 401 (call get_frame_type())\r\ncommon/utils/nr/nr_common.c Line 291 (callee)\r\ncommon/utils/nr/nr_common.c/get_frame_type() Line 301 (PRINT)",
+      "line": 301
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_parms.c",
+      "description": "[PHY]   Init: N_RB_DL 106, first_carrier_offset 1412, nb_prefix_samples 144,nb_prefix_samples0 176\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 505 (call nr_init_frame_parms_ue_sa())\r\nopenair1/PHY/INIT/nr_parms.c  Line 386 (callee)\r\nopenair1/PHY/INIT/nr_parms.c/nr_init_frame_parms_ue_sa() Line 404 (call set_scs_parameters())\r\nopenair1/PHY/INIT/nr_parms.c Line 138 (callee)\r\nopenair1/PHY/INIT/nr_parms.c Line 196 (PRINT)",
+      "line": 196,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 7,
+          "character": 46
+        }
+      }
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 3619200000.000000 Hz, Nsymb 28\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 521 (call init_symbol_rotation())\r\nopenair1/PHY/MODULATION/nr_modulation.c   Line 606 (callee)\r\nopenair1/PHY/MODULATION/nr_modulation.c/init_symbol_rotation() Line 621 (PRINT)",
+      "line": 621
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Symbol rotation 0/28 => tl 0.000000 (-32767,-1) (0.500000)\r\n...\r\n[PHY]   Symbol rotation 27/28 => tl 0.000964 (32766,0) (1.000000)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 521 (call init_symbol_rotation())\r\nopenair1/PHY/MODULATION/nr_modulation.c  Line 606 (callee)\r\nopenair1/PHY/MODULATION/nr_modulation.c/init_symbol_rotation() Line 644 (PRINT)",
+      "line": 644
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 3619200000.000000 Hz, Nsymb 28\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 521 (call init_symbol_rotation())\r\nopenair1/PHY/MODULATION/nr_modulation.c   Line 606 (callee)\r\nopenair1/PHY/MODULATION/nr_modulation.c/init_symbol_rotation() Line 621 (PRINT)",
+      "line": 621
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Symbol rotation 0/28 => tl 0.000000 (-32767,-1) (0.500000)\r\n...\r\n[PHY]   Symbol rotation 27/28 => tl 0.000964 (32766,0) (1.000000)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 521 (call init_symbol_rotation())\r\nopenair1/PHY/MODULATION/nr_modulation.c  Line 606 (callee)\r\nopenair1/PHY/MODULATION/nr_modulation.c/init_symbol_rotation() Line 644 (PRINT)",
+      "line": 644
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Timeshift symbol rotation 0 => (32767,0) 0.000000\r\n...\r\n[PHY]   Timeshift symbol rotation 9 => (28803,15623) -0.497010\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 522 (call init_timeshift_rotation())\r\nopenair1/PHY/MODULATION/nr_modulation.c Line 658 (callee)\r\nopenair1/PHY/MODULATION/nr_modulation.c/init_timeshift_rotation() Line 669 (PRINT)",
+      "line": 669
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init_ue.c",
+      "description": "[PHY]   Initializing UE vars for gNB TXant 1, UE RXant 1 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 523 (call init_nr_ue_vars())\r\nexecutables/nr-ue.c Line 153 (callee)\r\nexecutables/nr-ue.c/init_nr_ue_vars() Line 172 (call init_nr_ue_signal())\r\nopenair1/PHY/INIT/nr_init_ue.c Line 138 (callee)\r\nopenair1/PHY/INIT/nr_init_ue.c/init_nr_ue_signal() Line 151 (PRINT)",
+      "line": 151
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 3619200000.000000 Hz, Nsymb 28",
+      "line": 621
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Symbol rotation 0/28 => tl 0.000000 (-32767,-1) (0.500000)\r\n...\r\n[PHY]   Symbol rotation 27/28 => tl 0.000964 (32766,0) (1.000000)",
+      "line": 644
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Doing symbol rotation calculation for gNB TX/RX, f0 3619200000.000000 Hz, Nsymb 28",
+      "line": 621
+    },
+    {
+      "file": "openair1/PHY/MODULATION/nr_modulation.c",
+      "description": "[PHY]   Symbol rotation 0/28 => tl 0.000000 (-32767,-1) (0.500000)\r\n...\r\n[PHY]   Symbol rotation 27/28 => tl 0.000964 (32766,0) (1.000000)",
+      "line": 644
+    },
+    {
+      "file": "openair1/PHY/INIT/nr_init_ue.c",
+      "description": "[PHY]   UE 0 Setting N_TA_offset to 800 samples (factor 2.000000, UL Freq 3619200000, N_RB 106, mu 1)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 523 (call init_nr_ue_vars())\r\nexecutables/nr-ue.c Line 153 (callee)\r\nexecutables/nr-ue.c/init_nr_ue_vars() Line 178 (call init_N_TA_offset())\r\nopenair1/PHY/INIT/nr_init_ue.c Line 531 (callee)\r\nopenair1/PHY/INIT/nr_init_ue.c/init_N_TA_offset() Line 567 (PRINT)",
+      "line": 567
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 0, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)\r\n",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 1, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 2, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 3, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 4, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 5, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 6, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[PHY]   HW: Configuring card 7, sample_rate 61440000.000000, tx/rx num_channels 1/1, duplex_mode TDD\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 360 (PRINT)",
+      "line": 360
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200000 Hz, rx_freq 3619200000 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 369 (call nr_rf_card_config_freq())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() Line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_gain 0, rx_gain 110\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 526 (call init_openair0())\r\nexecutables/nr-uesoftmodem.c Line 335 (callee)\r\nexecutables/nr-uesoftmodem.c/init_openair0() Line 370 (call nr_rf_card_config_gain())\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 50 (callee)\r\nopenair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_gain() Line 70 (PRINT)\r\n",
+      "line": 70
+    },
+    {
+      "file": "common/utils/system.c",
+      "description": "[HW]   # /dev/cpu_dma_latency set to 2 us\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 530 (call set_latency_target())\r\ncommon/utils/system.c Line 395 (callee)\r\ncommon/utils/system.c/set_latency_target() Line 411 (PRINT)",
+      "line": 411
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "[PHY]   Intializing UE Threads for instance 0 (0x5648731f0c40,0x7f36fa829010)...\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\nexecutables/nr-ue.c Line 1102 (callee)\r\nexecutables/nr-ue.c/init_NR_UE_threads() Line 1110 (PRINT)",
+      "line": 1110,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 5,
+          "character": 59
+        }
+      }
+    },
+    {
+      "file": "targets/ARCH/rfsimulator/simulator.c",
+      "description": "[HW]   rfsimulator: running as client: will connect to a rfsimulator server side",
+      "line": 768
+    },
+    {
+      "file": "targets/ARCH/COMMON/common_lib.c",
+      "description": "[HW]   [RRU] has loaded RFSIMULATOR device.",
+      "line": 72
+    },
+    {
+      "file": "targets/ARCH/rfsimulator/simulator.c",
+      "description": "[HW]   rfsimulator: trying to connect to 127.0.0.1:4043",
+      "line": 412
+    },
+    {
+      "file": "targets/ARCH/rfsimulator/simulator.c",
+      "description": "[HW]   rfsimulator: connection established ",
+      "line": 415
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "[NR_RRC]   create TASK_RRC_NRUE\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 192 (PRINT)",
+      "line": 192
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "[ITTI]   Created Posix thread TASK_RRC_NRUE\r\n[ITTI]   Created Posix thread TASK_NAS_NRUE\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193/204 (call itti_create_task())\r\n-> common/utils/ocp_itti/intertask_interface.cpp line 320 (callee)\r\n-> common/utils/ocp_itti/intertask_interface.cpp line 325 (PRINT)",
+      "line": 325
+    },
+    {
+      "file": "targets/ARCH/rfsimulator/simulator.c",
+      "description": "[HW]   UE got first timestamp: starting at 12994559",
+      "line": 559
+    },
+    {
+      "file": "targets/ARCH/rfsimulator/simulator.c",
+      "description": "[HW]   UEsock: 96 gap of: 1 in reception",
+      "line": 576
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "[PHY]   [SCHED][UE] Check absolute frequency DL 3619200000.000000, UL 3619200000.000000 (RF card 0, oai_exit 0, channel 0, rx_num_channels 1)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 496 (PRINT)",
+      "line": 496
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "[PHY]   Starting sync detection\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 522 (PRINT)",
+      "line": 522
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "[PHY]   [UE thread Synch] Running Initial Synch (mode 6) \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 556 (PRINT)",
+      "line": 556
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/pss_nr.c",
+      "description": "[PHY]   [UE] nr_synchro_time: Sync source = 0, Peak found at pos 526800, val = 8512764581 (96 dB) avg 61 dB, ffo 0.000000\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 249 (call pss_synchro_nr())\r\n-> openair1/PHY/NR_UE_TRANSPORT/pss_nr.c Line 511 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/pss_nr.c/pss_synchro_nr() Line 558 (call pss_search_time_nr())\r\n-> openair1/PHY/NR_UE_TRANSPORT/pss_nr.c Line 673 (callee) \r\n-> openair1/PHY/NR_UE_TRANSPORT/pss_nr.c/pss_search_time_nr() line 791 (PRINT)\r\n",
+      "line": 791
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   [UE0] Initial sync : Estimated PSS position 526800, Nid2 0 \r\n(or maybe line 476 in this module)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 257 (PRINT)",
+      "line": 257
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   sync_pos 526800 ssb_offset 526656\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 258 (PRINT)",
+      "line": 258
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   Calling sss detection (normal CP)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 307 (PRINT)",
+      "line": 307
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/sss_nr.c",
+      "description": "[NR_PHY]   ffo_pss 0.000000 (0 Hz), ffo_sss 0.000324 (9 Hz),  ffo_pss+ffo_sss 0.000324 (9 Hz)  \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 311 (call rx_sss_nr())\r\n-> openair1/PHY/NR_UE_TRANSPORT/sss_nr.c Line 423 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/sss_nr.c/rx_sss_nr() Line 579 (PRINT)",
+      "line": 579
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   [UE0] Initial sync: starting PBCH detection (rx_offset 0)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 341 (call nr_pbch_detection())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 104 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_pbch_detection() line 113 (PRINT)",
+      "line": 113
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   Configuring MAC for first MIB reception",
+      "line": 565
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   [UE0] Initial sync: pbch decoded sucessfully",
+      "line": 192
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   TDD Normal prefix: CellId 0 metric 53283, phase 7, pbch 0 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 400 (PRINT)",
+      "line": 400
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   [UE0] In synch, rx_offset 522240 samples \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 429 (PRINT)\r\n",
+      "line": 429
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   [UE 0] RRC Measurements => rssi -inf dBm (dig -inf dB, gain 110), N0 0 dBm,  rsrp -inf dBm/RE, rsrq -inf dB\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 448 (PRINT)",
+      "line": 448
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c",
+      "description": "[PHY]   [UE 0] Measured Carrier Frequency 3619200000 Hz (offset 0 Hz)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync() Line 468 (PRINT)",
+      "line": 468
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c",
+      "description": "[PHY]   HW: Configuring channel 0 (rf_chain 0): setting tx_freq 3619200009 Hz, rx_freq 3619200009 Hz, tune_offset 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 568 (call nr_rf_card_config_freq())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c Line 80 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_ue_rf_helpers.c/nr_rf_card_config_freq() line 106 (PRINT)",
+      "line": 106
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "[PHY]   Got synch: hw_slot_offset 34, carrier off 9 Hz, rxgain 0.000000 (DL 3619200009.000000 Hz, UL 3619200009.000000 Hz)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() line 570 (PRINT)",
+      "line": 570
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   SIB1 decoded \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() line 1182 (PRINT)",
+      "line": 1182
+    },
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "[NR_MAC]   NR band duplex spacing is 0 KHz (nr_bandtable[37].band = 78)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() line 1195 (call nr_rrc_mac_config_req_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 589 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/nr_rrc_mac_config_req_ue() Line 618 (call config_common_ue_sa())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 120 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/config_common_ue_sa() Line 177 (call get_frame_type())\r\n-> common/utils/nr/nr_common.c Line 291 (callee)\r\n-> common/utils/nr/nr_common.c/get_frame_type() Line 294 (call get_delta_duplex())\r\n-> common/utils/nr/nr_common.c Line 307 (callee)\r\n-> common/utils/nr/nr_common.c/get_delta_duplex() Line 313 (PRINT) ",
+      "line": 313,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 17,
+          "character": 68
+        }
+      }
+    },
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "[NR_MAC]   NR band 78, duplex mode TDD, duplex spacing = 0 KHz\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() line 1195 (call nr_rrc_mac_config_req_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 589 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/nr_rrc_mac_config_req_ue() Line 650 (call config_common_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 261 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/config_common_ue() Line 326 (call get_frame_type())\r\n-> common/utils/nr/nr_common.c Line 291 (callee)\r\n-> common/utils/nr/nr_common.c/get_frame_type() Line 301 (PRINT)",
+      "line": 301
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/config_ue.c",
+      "description": "[NR_MAC]   TDD has been properly configured\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() line 1195 (call nr_rrc_mac_config_req_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 589 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/nr_rrc_mac_config_req_ue() Line 618 (call config_common_ue_sa())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 120 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/config_common_ue_sa() Line 205 (call set_tdd_config_nr_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 41 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/set_tdd_config_nr_ue() line 115 (PRINT)",
+      "line": 115
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/config_ue.c",
+      "description": "[NR_MAC]   Initializing ul_config_request. num_slots_ul = 3\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() line 1195 (call nr_rrc_mac_config_req_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 589 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/nr_rrc_mac_config_req_ue() Line 627 (PRINT)",
+      "line": 627,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 85
+        }
+      }
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "[PHY]   Resynchronizing RX by 522240 samples (mode = 6) \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 909 (call syncInFrame())\r\n-> executables/nr-ue.c Line 779 (callee)\r\n-> executables/nr-ue.c/syncInFrame()  line 781 (PRINT)",
+      "line": 781
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   Slot 5 is not a UL slot. get_ul_config_request called for wrong slot!!!\r\n\r\n(maybe wrong)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 460 (call init_NR_UE())\r\n-> executables/nr-ue.c Line 1088 (callee)\r\n-> executables/nr-ue.c/init_NR_UE() Line 1098 (call nr_ue_if_module_init())\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1274 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_if_module_init() Line 1289 (call nr_ue_ul_indication())\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1126 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_ul_indication()  Line 1133 (call nr_ue_scheduler())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c Line 1070 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c/nr_ue_scheduler() Line 1141 (call get_ul_config_request())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c Line 159 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c/get_ul_config_request() line 166",
+      "line": 166
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   mac->ul_config is null!  ",
+      "line": 1143
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   Slot 6 is not a UL slot. get_ul_config_request called for wrong slot!!!",
+      "line": 166
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   mac->ul_config is null!",
+      "line": 1143
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   Slot 6 is not a UL slot. get_ul_config_request called for wrong slot!!!",
+      "line": 166
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   mac->ul_config is null!",
+      "line": 1143
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   Slot 11 is not a UL slot. get_ul_config_request called for wrong slot!!!",
+      "line": 166
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   mac->ul_config is null!",
+      "line": 1143
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   Slot 12 is not a UL slot. get_ul_config_request called for wrong slot!!!",
+      "line": 166
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   mac->ul_config is null!\r\n...\r\ngoes for 58 iterations in total\r\nSlot 0-6, 10-16",
+      "line": 1143
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] : Logical Channel UL-CCCH (SRB0), Generating RRCSetupRequest (bytes 6, gNB 0)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2448 (call nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1126 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_NR_BCCH_DL_SCH_Message() Line 1231 (call nr_rrc_ue_generate_RRCSetupRequest())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1741 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_generate_RRCSetupRequest()  line 1767",
+      "line": 1767
+    },
+    {
+      "file": "openair1/PHY/NR_UE_ESTIMATION/nr_adjust_synch_ue.c",
+      "description": "openair1/PHY/NR_UE_ESTIMATION/nr_adjust_synch_ue.c  line 109\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 681 (call phy_procedures_nrUE_RX())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1395 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/phy_procedures_nrUE_RX() Line 1464 (call nr_adjust_synch_ue())\r\n-> openair1/PHY/NR_UE_ESTIMATION/nr_adjust_synch_ue.c Line 36 (callee)\r\n-> openair1/PHY/NR_UE_ESTIMATION/nr_adjust_synch_ue.c/nr_adjust_synch_ue() line 109 (PRINT)",
+      "line": 109
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "[NR_PHY]   ============================================\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 681 (call phy_procedures_nrUE_RX())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1395 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/phy_procedures_nrUE_RX()  line 1482 (PRINT)",
+      "line": 1482
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "[NR_PHY]   Harq round stats for Downlink: 1/0/0/0 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 681 (call phy_procedures_nrUE_RX())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1395 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/phy_procedures_nrUE_RX()  line 1489 (PRINT)",
+      "line": 1489
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "[NR_PHY]   ============================================\r\n...\r\n3 iterations\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 681 (call phy_procedures_nrUE_RX())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1395 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/phy_procedures_nrUE_RX()  line 1494 (PRINT)",
+      "line": 1494
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c",
+      "description": "[MAC]   Initialization of 4-step contention-based random access procedure\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 722 (call nr_ue_prach_procedures())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1828 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/nr_ue_prach_procedures() Line 1848 (call nr_ue_get_rach())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c Line 662 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c/nr_ue_get_rach() Line 783 (call init_RA()) \r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c Line 54 (callee) \r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c/init_RA() line 133 (PRINT)\r\n",
+      "line": 133
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_prach.c",
+      "description": "[PHY]   PRACH [UE 0] in frame.slot 259.19, placing PRACH in position 2828, msg1 frequency start 0 (k1 0), preamble_offset 6, first_nonzero_root_idx 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 722 (call nr_ue_prach_procedures())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1828 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/nr_ue_prach_procedures() Line 1883 (call generate_nr_prach())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_prach.c Line 60 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_prach.c/generate_nr_prach() Line 234 (PRINT)",
+      "line": 234
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [UE 0][RAPROC] Got BI RAR subPDU 5 ms \r\n\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1167 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_dl_indication() Line 1245/1248 (call handle_dlsch())\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1089 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/handle_dlsch() Line 1101 (call nr_ue_send_sdu())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 2819 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c/nr_ue_send_sdu() Line 2832 (call nr_ue_process_rar())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 4005 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c/nr_ue_process_rar() line 4039 (PRINT)\r\n",
+      "line": 4039
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [UE 0][RAPROC] Got RAPID RAR subPDU",
+      "line": 4035
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [UE 0][RAPROC][260.7] Found RAR with the intended RAPID 27",
+      "line": 4048
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_scheduler.c",
+      "description": "[NR_MAC]   [RAPROC][260.17] RA-Msg3 transmitted",
+      "line": 1221
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[MAC]   [UE 0][RAPROC] Frame 262 : received contention resolution identity: 0x11aad6b95c66 Terminating RA procedure",
+      "line": 3729
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c",
+      "description": "[MAC]   [UE 0][262.1][RAPROC] RA procedure succeeded. CB-RA: Contention Resolution is successful.\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 722 (call nr_ue_prach_procedures())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1828 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/nr_ue_prach_procedures() Line 1848 (call nr_ue_get_rach())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c Line 662 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c/nr_ue_get_rach() Line 832 (call nr_ra_succeeded())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c Line 958 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ra_procedures.c/nr_ra_succeeded() line 971 (PRINT)",
+      "line": 971,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 15,
+          "character": 83
+        }
+      }
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "CMDLINE: \"./nr-uesoftmodem\" \"--sa\" \"--numerology\" \"1\" \"-r\" \"106\" \"--band\" \"78\" \"-C\" \"3619200000\" \"--rfsim\" \"--nokrnmod\" \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 423 (call load_configmodule())\r\n-> common/config/config_load_configmodule.c Line 184 (callee) \r\n-> common/config/config_load_configmodule.c/load_configmodule() line 197 (PRINT)",
+      "line": 197
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] get parameters from cmdline , debug flags: 0x00400000\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 423 (call load_configmodule())\r\n-> common/config/config_load_configmodule.c Line 184 (callee) \r\n-> common/config/config_load_configmodule.c/load_configmodule() line 291 (PRINT)",
+      "line": 291
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] get parameters from cmdline , debug flags: 0x00400000\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 423 (call load_configmodule())\r\n-> common/config/config_load_configmodule.c Line 184 (callee) \r\n-> common/config/config_load_configmodule.c/load_configmodule() Line 297 (PRINT)",
+      "line": 297
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] log_config: 2/3 parameters successfully set\r\n[CONFIG] log_config: 55/55 parameters successfully set \r\n[CONFIG] log_config: 55/55 parameters successfully set \r\n[CONFIG] log_config: 16/16 parameters successfully set \r\n[CONFIG] log_config: 16/16 parameters successfully set\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 423 (call load_configmodule())\r\n-> common/config/config_load_configmodule.c Line 184 (callee) \r\n-> common/config/config_load_configmodule.c/load_configmodule() Line 312 (call config_cmdlineonly_get())\r\n-> common/config/config_load_configmodule.c Line 115 (callee)\r\n-> common/config/config_load_configmodule.c/config_cmdlineonly_get() line 172 (PRINT)",
+      "line": 172
+    },
+    {
+      "file": "common/utils/LOG/log.c",
+      "description": "log init done\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 431 (call logInit())\r\n-> common/utils/LOG/log.c Line 435 (callee)\r\n-> common/utils/LOG/log.c/logInit() line 512 (PRINT)",
+      "line": 512
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] (root): 10/10 parameters successfully set \r\n[CONFIG] (root): 32/36 parameters successfully set \r\n[CONFIG] (root): 4/5 parameters successfully set\r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "executables/softmodem-common.c",
+      "description": "nokrnmod bit enabled \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 436 (call get_common_options())\r\n-> executables/softmodem-common.c Line 87 (callee)\r\n-> executables/softmodem-common.c/get_common_options() line 133 (PRINT)",
+      "line": 133
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] TTracer: 4/4 parameters successfully set \r\n\r\n(same as atep 110)",
+      "line": 172
+    },
+    {
+      "file": "common/utils/threadPool/thread-pool.c",
+      "description": "create a thread for core -1 \r\ncreate a thread for core -1 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 441 (call init_tpools())\r\n-> executables/nr-uesoftmodem.c Line 247 (callee)\r\n-> executables/nr-uesoftmodem.c/init_tpools() Line 254/257 (call init_dlsch_tpool())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_dlsch_decoding.c Line 64 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_dlsch_decoding.c/init_dlsch_tpool() Line 78 (call initNamedTpool())\r\n-> common/utils/threadPool/thread-pool.c Line 95 (callee)\r\n-> common/utils/threadPool/thread-pool.c/initNamedTpool()  line 136 (PRINT)\r\n",
+      "line": 136
+    },
+    {
+      "file": "common/utils/time_meas.c",
+      "description": "CPU Freq is 1.991755\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 445 (call get_cpu_freq_GHz())\r\n-> common/utils/time_meas.c Line 39 (callee)\r\n-> common/utils/time_meas.c/get_cpu_freq_GHz() line 49 (PRINT)",
+      "line": 49
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] opt: 3/3 parameters successfully set \r\n[CONFIG] loader: 2/2 parameters successfully set \r\n[CONFIG] loader.ldpc: 1/2 parameters successfully set \r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "shlib_path libldpc.so\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 449 (call load_nrLDPClib())\r\n-> openair1/PHY/CODING/nrLDPC_load.c Line 51 (callee)\r\n-> openair1/PHY/CODING/nrLDPC_load.c/load_nrLDPClib() Line 64 (call load_module_version_shlib())\r\n-> common/utils/load_module_shlib.c Line 118 (callee)\r\n-> common/utils/load_module_shlib.c/load_module_version_shlib() line 139 (PRINT)",
+      "line": 139
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "[LOADER] library libldpc.so successfully loaded\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 449 (call load_nrLDPClib())\r\n-> openair1/PHY/CODING/nrLDPC_load.c Line 51 (callee)\r\n-> openair1/PHY/CODING/nrLDPC_load.c/load_nrLDPClib() Line 64 (call load_module_version_shlib())\r\n-> common/utils/load_module_shlib.c Line 118 (callee)\r\n-> common/utils/load_module_shlib.c/load_module_version_shlib() line 169 (PRINT)",
+      "line": 169
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] nas.noS1: 3/3 parameters successfully set \r\n[CONFIG] (root): 25/25 parameters successfully set \r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "common/utils/nr/nr_common.c",
+      "description": "DL frequency 3619200000: band 48, UL frequency 3619200000\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 503 (call get_band())\r\n-> common/utils/nr/nr_common.c Line 133 (callee)\r\n-> common/utils/nr/nr_common.c/get_band() line 159 (PRINT)",
+      "line": 159
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] loader.dfts: 1/2 parameters successfully set\r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "shlib_path libdfts.so\r\n\r\n(same as step 118)",
+      "line": 139
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "[LOADER] library libdfts.so successfully loaded\r\n\r\n(same as step 119)",
+      "line": 169
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] device.recplay: 8/8 parameters successfully set \r\n[CONFIG] device: 1/1 parameters successfully set \r\n[CONFIG] loader.rfsimulator: 1/2 parameters successfully set \r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "shlib_path librfsimulator.so\r\n\r\n(same as step 118)",
+      "line": 139
+    },
+    {
+      "file": "common/utils/load_module_shlib.c",
+      "description": "[LOADER] library librfsimulator.so successfully loaded\r\n\r\n(same as step 119)",
+      "line": 169
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] rfsimulator: 7/8 parameters successfully set\r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "openair1/SIMULATION/TOOLS/rangen_double.c",
+      "description": "Initializing random number generator, seed 4f6cb54b",
+      "line": 53
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "UE threads created by 5235\r\n\r\nexecutables/nr-uesoftmodem.c  line 538",
+      "line": 538
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "TYPE <CTRL-C> TO TERMINATE\r\n\r\nexecutables/nr-uesoftmodem.c  line 542",
+      "line": 542
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/pss_nr.c",
+      "description": "PSS execution duration 459170 microseconds\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() Line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync()  Line 249 (call pss_synchro_nr())\r\n-> openair1/PHY/NR_UE_TRANSPORT/pss_nr.c Line 511 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/pss_nr.c/pss_synchro_nr() line 575 (PRINT)",
+      "line": 575
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/sss_nr.c",
+      "description": "Nid2 0 Nid1 0 tot_metric 53283, phase_max 7 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread() Line 897 (call UE_synch())\r\n-> executables/nr-ue.c Line 483 (callee)\r\n-> executables/nr-ue.c/UE_synch() Line 561 (call nr_initial_sync())\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c Line 204 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/nr_initial_sync.c/nr_initial_sync()  Line 311 (call rx_sss_nr())\r\n-> openair1/PHY/NR_UE_TRANSPORT/sss_nr.c Line 423 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/sss_nr.c/rx_sss_nr() line 557 (PRINT)",
+      "line": 557
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "(skip the DL-CCCH-Message)\r\n[NR_RRC]   [UE0][RAPROC] Frame 262 : Logical Channel DL-CCCH (SRB0), Received NR_RRCSetup RNTI 2165\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() line 1441 (PRINT)",
+      "line": 1441
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[RRC]   Received mac_CellGroupConfig from gNB\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1451 (call nr_rrc_ue_process_masterCellGroup())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1242 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_masterCellGroup() line 1287 (PRINT)",
+      "line": 1287
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/config_ue.c",
+      "description": "[MAC]   Applying CellGroupConfig from gNodeB \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1451 (call nr_rrc_ue_process_masterCellGroup())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1242 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_masterCellGroup() Line 1315 (call nr_rrc_mac_config_req_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 589 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/nr_rrc_mac_config_req_ue() Line 659 (PRINT)",
+      "line": 659
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "[RLC]   /home/UFAD/duan.c/openairinterface5g/openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c:770:add_rlc_srb: added srb 1 to UE with RNTI 0x2165\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1455 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2052 (call nr_rrc_rlc_config_asn1_req())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 954 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/nr_rrc_rlc_config_asn1_req() Line 991 (call add_rlc_srb())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 684 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/add_rlc_srb() Line 770 (PRINT)",
+      "line": 770
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0], CONFIG_SRB1 1 corresponding to gNB_index 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1455 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2070 (call nr_rrc_ue_establish_srb1())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1798 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_establish_srb1() Line 1810 (PRINT)",
+      "line": 1810
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [FRAME 00262][RRC_UE][MOD 00][][--- MAC_CONFIG_REQ  (SRB1 gNB 0) --->][MAC_UE][MOD 00][] \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1455 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2075 (PRINT)",
+      "line": 2075,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 87
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] State = NR_RRC_CONNECTED (gNB 0) \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1455 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2183 (PRINT)",
+      "line": 2183
+    },
+    {
+      "file": "openair3/UICC/usim_interface.c",
+      "description": "[SIM]   UICC simulation: IMSI=2089900007487, Ki=fec86ba6eb707ed08905757b1bb44b8f, OPc=c42449363bbad02b66d16bc975d77cc1\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 823 (call checkUicc())\r\n-> openair3/UICC/usim_interface.c Line 100 (callee)\r\n-> openair3/UICC/usim_interface.c/checkUicc() Line 108 (call init_uicc())\r\n-> openair3/UICC/usim_interface.c Line 67 (callee)\r\n-> openair3/UICC/usim_interface.c/init_uicc() Line 76 (PRINT)",
+      "line": 76
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0][RAPROC] Frame 262 : Logical Channel UL-DCCH (SRB1), Generating RRCSetupComplete (bytes41, gNB 0)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 1461 (call rrc_ue_generate_RRCSetupComplete())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1333 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_generate_RRCSetupComplete() Line 1367 (PRINT)\r\n",
+      "line": 1367
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())\r\n-> executables/nr-ue.c Line 1102 (callee)\r\n-> executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())\r\n-> executables/nr-ue.c Line 826 (callee)\r\n-> executables/nr-ue.c/UE_thread()  Line 855 (call processSlotRX())\r\n-> executables/nr-ue.c Line 647 (callee)\r\n-> executables/nr-ue.c/processSlotRX() Line 681 (call phy_procedures_nrUE_RX())\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1395 (callee)\r\n-> openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/phy_procedures_nrUE_RX() Line 1732 (call nr_ue_csi_rs_procedures())\r\n-> openair1/PHY/NR_UE_TRANSPORT/csi_rx.c Line 826 (callee)\r\n-> openair1/PHY/NR_UE_TRANSPORT/csi_rx.c/nr_ue_csi_rs_procedures() Line 947",
+      "line": 947,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 76
+        }
+      }
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: UEid 0, length 42 , buffer 0x7f36cc00fda0 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 956 (PRINT)",
+      "line": 956
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "(might be this one, not so sure)\r\n[NAS]    nr_nas_msg_sim.c:266  derive_kgnb  with count= 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 972 (call generateAuthenticationResp())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 481 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/generateAuthenticationResp() Line 483 (call derive_ue_keys())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 292 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/derive_ue_keys() Line 331 (call derive_kgnb())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 257 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/derive_kgnb() Line 266 (PRINT)",
+      "line": 266
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   Send NAS_UPLINK_DATA_REQ message\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 1024 (PRINT)",
+      "line": 1024,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 7,
+          "character": 73
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Received NAS_UPLINK_DATA_REQ: UEid 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2521 (PRINT)",
+      "line": 2521
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   [UE 0] Received NAS_DOWNLINK_DATA_IND: UEid 0, length 21 , buffer 0x7f36cc008380\r\n\r\n(same as step 144)",
+      "line": 956
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   Send NAS_UPLINK_DATA_REQ message\r\n\r\n(same as step 146)",
+      "line": 1024
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Received NAS_UPLINK_DATA_REQ: UEid 0 \r\n\r\n(same as step 147)",
+      "line": 2521
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [270.0] Received TA_COMMAND 31 TAGID 0 CC_id 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 460 (call init_NR_UE())\r\n-> executables/nr-ue.c Line 1088 (callee)\r\n-> executables/nr-ue.c Line 1098 (call nr_ue_if_module_init())\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1274 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_if_module_init() Line 1288 (call nr_ue_dl_indication())\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1167 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_dl_indication() Line 1245/1248 (call handle_dlsch())\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1089 (callee)\r\n-> openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/handle_dlsch() Line 1101 (call nr_ue_send_sdu())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 2819 (callee) \r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c/nr_ue_send_sdu() Line 2829 (call nr_ue_process_mac_pdu())\r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 3589 (callee) \r\n-> openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c/nr_ue_process_mac_pdu() Line 3719 (PRINT)",
+      "line": 3719,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 15,
+          "character": 90
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Received securityModeCommand (gNB 0)    \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2405 (PRINT)",
+      "line": 2405
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] SFN/SF 0/0: Receiving from SRB1 (DL-DCCH), Processing securityModeCommand (eNB 0)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1580 (PRINT)",
+      "line": 1580,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 89
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Security algorithm is set to nea0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1585 (PRINT)",
+      "line": 1585
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Integrity protection algorithm is set to nia2\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1618 (PRINT)",
+      "line": 1618
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   rrc_ue_process_securityModeCommand, security mode complete case\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1640 (PRINT)",
+      "line": 1640
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   driving kRRCenc, kRRCint and kUPenc from KgNB=f302ba6612ba3204ed766f3e7d8da59233e1cae27d19606108da73902494270c\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1660 (PRINT)",
+      "line": 1660
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] SFN/SF 0/0: Receiving from SRB1 (DL-DCCH), encoding securityModeComplete (gNB 0), rrc_TransactionIdentifier: 1\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1693 (PRINT)",
+      "line": 1693
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0\r\n\r\n(same as step 143)",
+      "line": 947
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Received Capability Enquiry (gNB 0)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2358 (PRINT)",
+      "line": 2358
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Frame 0: Receiving from SRB1 (DL-DCCH), Processing UECapabilityEnquiry (gNB 0) \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2359 (call nr_rrc_ue_process_ueCapabilityEnquiry())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2596 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_ueCapabilityEnquiry() Line 2611 (PRINT)",
+      "line": 2611,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 89
+        }
+      }
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "[CONFIG] uicc0: 9/9 parameters successfully set \r\n\r\n(same as step 110)",
+      "line": 172
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "(kgnb : f3 02 ba 66 12 ba 32 04 ed 76 6f 3e 7d 8d a5 92 33 e1 ca e2 7d 19 60 61 08 da 73 90 24 94 27 0c \r\nkausf:26 b5 1d 4a f7 6c 63 d7 4 f5 b6 ea fc 7c 70 36 59 6d 54 14 a2 e7 2c 39 43 cd d 3e af 13 49 e0 \r\nkseaf:2 44 73 31 bd 71 ec a6 b4 44 42 80 ad cf 24 b6 5d 5b eb 41 df c9 fc b8 cb cb b9 2f 3 5c 2d d2 \r\nkamf:52 6b d6 14 e8 e9 77 ef 6d f4 b5 b0 fe f3 1 ff 49 71 67 6b b6 2d b0 68 a2 3f 46 e6 76 a3 1 ab \r\nknas_int:\r\n6 3a 63 d8 db c6 86 13 b4 3 fd d7 50 7e ea ec \r\nByte length: 51, Zero bits: 0\r\nm: 0000000008000000007e005e770002151171001f7e004119000c0102f89900000000000047781001072e088020000000000000\r\nKey:063a63d8dbc68613b403fdd7507eeaec\r\nMessage:007e005e770002151171001f7e004119000c0102f89900000000000047781001072e088020000000000000\r\nout: 2e35a709b030e10c45b8fc27856d2323\r\nmac 2e 35 a7 9) (cannot find them, maybe in this C module)\r\n\r\n[MAC]   securityModeComplete payload: 2a 00 01 cc 36 7f 00 00 b0 9a ba 69 48 56 00 00\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2407 (call nr_rrc_ue_process_securityModeCommand())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1569 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_securityModeCommand() Line 1706 (PRINT)",
+      "line": 1706
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "(There are messages about UE-NR-Capability before it)\r\n\r\n[PHY]   [RRC]UE NR Capability encoded, 10 bytes (86 bits)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2359 (call nr_rrc_ue_process_ueCapabilityEnquiry())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2596 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_ueCapabilityEnquiry() Line 2662 (PRINT)",
+      "line": 2662
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   UECapabilityInformation Encoded 106 bits (14 bytes)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2469 (call nr_rrc_ue_decode_ccch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1398 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_ccch() Line 2359 (call nr_rrc_ue_process_ueCapabilityEnquiry())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2596 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_ueCapabilityEnquiry() Line 2701 (PRINT)",
+      "line": 2701
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Frame 0: Receiving from SRB1 (DL-DCCH), Processing RRCReconfiguration (gNB 0)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2195 (PRINT)",
+      "line": 2195,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 11,
+          "character": 85
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[RRC]   Received mac_CellGroupConfig from gNB\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2209 (call nr_rrc_ue_process_masterCellGroup())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1242 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_masterCellGroup() Line 1287 (PRINT)",
+      "line": 1287
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[RRC]   UE RRC instance already contains mac CellGroupConfig which will be overwritten\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2209 (call nr_rrc_ue_process_masterCellGroup())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1242 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_masterCellGroup() Line 1289 (PRINT)",
+      "line": 1289
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/config_ue.c",
+      "description": "[MAC]   Applying CellGroupConfig from gNodeB\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2209 (call nr_rrc_ue_process_masterCellGroup())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1242 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_masterCellGroup() Line 1315 (call nr_rrc_mac_config_req_ue())\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c Line 589 (callee)\r\n-> openair2/LAYER2/NR_MAC_UE/config_ue.c/nr_rrc_mac_config_req_ue() Line 659 (PRINT)",
+      "line": 659
+    },
+    {
+      "file": "openair2/RRC/NR/MESSAGES/asn1_msg.c",
+      "description": "[NR_RRC]   rrcReconfigurationComplete Encoded 10 bits (2 bytes)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2334 (call nr_rrc_ue_generate_RRCReconfigurationComplete()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2243 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_generate_RRCReconfigurationComplete() Line 2245 (call do_NR_RRCReconfigurationComplete())\r\n-> openair2/RRC/NR/MESSAGES/asn1_msg.c Line 2497 (callee)\r\n-> openair2/RRC/NR/MESSAGES/asn1_msg.c/do_NR_RRCReconfigurationComplete() Line 2531",
+      "line": 2531,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 84
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [FRAME 00000][ UE][MOD 00][RNTI 2165] Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2, gNB_index 0)\r\n\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2334 (call nr_rrc_ue_generate_RRCReconfigurationComplete()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2243 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_generate_RRCReconfigurationComplete() Line 2246 (PRINT)",
+      "line": 2246
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   [UE 0] Received NAS_CONN_ESTABLI_CNF: errCode 1, length 68\r\n(or maybe in openair3/NAS/UE/nas_ue_task.c)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 871 (PRINT)\r\n",
+      "line": 871
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   [UE] Received REGISTRATION ACCEPT message\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 878 (PRINT)",
+      "line": 878
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [280.0] Received TA_COMMAND 31 TAGID 0 CC_id 0 \r\n\r\n(same as step 151)",
+      "line": 3719
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0\r\n[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0\r\n\r\n(same as step 143)",
+      "line": 947
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [290.0] Received TA_COMMAND 31 TAGID 0 CC_id 0\r\n\r\n(same as step 151)",
+      "line": 3719
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0\r\n(Then repeat \"openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c line 3719\" and \"openair1/PHY/NR_UE_TRANSPORT/csi_rx.c line 947\" twice to 310)",
+      "line": 947
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "[NR_PHY]   ============================================ \r\n[NR_PHY]   Harq round stats for Downlink: 19/1/0/0 \r\n[NR_PHY]   ============================================\r\n\r\n(same as step 96)",
+      "line": 1482
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [320.0] Received TA_COMMAND 31 TAGID 0 CC_id 0\r\n\r\n(same as step 151)",
+      "line": 3719
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0\r\n\r\n(Then repeat \"openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c line 3719\" and \"openair1/PHY/NR_UE_TRANSPORT/csi_rx.c line 947\" from 330 to 380)\r\n\r\n(same as step 143)",
+      "line": 947
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "[NR_PHY]   ============================================\r\n[NR_PHY]   Harq round stats for Downlink: 26/1/0/0\r\n[NR_PHY]   ============================================",
+      "line": 1482
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0\r\n\r\n(iterate \"openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c line 3719\" and \"openair1/PHY/NR_UE_TRANSPORT/csi_rx.c line 947\" from 390 to 430)",
+      "line": 947
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   Send NAS_UPLINK_DATA_REQ message(RegistrationComplete)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 890 (PRINT)",
+      "line": 890
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Received NAS_UPLINK_DATA_REQ: UEid 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2521 (PRINT)",
+      "line": 2521
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   Send NAS_UPLINK_DATA_REQ message(PduSessionEstablishRequest)\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 903 (PRINT)",
+      "line": 903
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Received NAS_UPLINK_DATA_REQ: UEid 0",
+      "line": 2521
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "[NR_MAC]   [440.0] Received TA_COMMAND 31 TAGID 0 CC_id 0",
+      "line": 3719
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0",
+      "line": 947
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "[NR_PHY]   ============================================\r\n[NR_PHY]   Harq round stats for Downlink: 34/1/0/0\r\n[NR_PHY]   ============================================",
+      "line": 1482
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/csi_rx.c",
+      "description": "repeat \"openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c line 3719\" and \"openair1/PHY/NR_UE_TRANSPORT/csi_rx.c line 947\" from 450.0-470.0",
+      "line": 947
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] Frame 0: Receiving from SRB1 (DL-DCCH), Processing RRCReconfiguration (gNB 0)\r\n\r\n(same as step 166)",
+      "line": 2195
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   radio Bearer Configuration is present\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2216 (PRINT)",
+      "line": 2216
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "[RLC]   /home/UFAD/duan.c/openairinterface5g/openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c:770:add_rlc_srb: added srb 2 to UE with RNTI 0x2165 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2052 (call nr_rrc_rlc_config_asn1_req())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 954 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/nr_rrc_rlc_config_asn1_req() Line 991 (call add_rlc_srb())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 684 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/add_rlc_srb()  Line 770 (PRINT)",
+      "line": 770,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 17,
+          "character": 75
+        }
+      }
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0], CONFIG_SRB2 2 corresponding to gNB_index 0\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2086 (call nr_rrc_ue_establish_srb2())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 1816 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_establish_srb2() Line 1828 (PRINT)",
+      "line": 1828
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [FRAME 00000][RRC_UE][MOD 00][][--- MAC_CONFIG_REQ  (SRB2 gNB 0) --->][MAC_UE][MOD 00][] \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2091 (PRINT)",
+      "line": 2091
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [FRAME 00000][RRC_UE][MOD 00][][--- MAC_CONFIG_REQ (DRB lcid 4 gNB 0) --->][MAC_UE][MOD 00][]\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2123 (PRINT)",
+      "line": 2123,
+      "selection": {
+        "start": {
+          "line": 3,
+          "character": 1
+        },
+        "end": {
+          "line": 13,
+          "character": 87
+        }
+      }
+    },
+    {
+      "file": "openair2/SDAP/nr_sdap/nr_sdap_entity.c",
+      "description": "[SDAP]   Default DRB for the created SDAP entity: 1\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2143 (call nr_rrc_pdcp_config_asn1_req())\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 1035 (callee)\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/nr_rrc_pdcp_config_asn1_req() Line 1079 (call add_drb())\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 1009 (callee)\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/add_drb() Line 1018 (call add_drb_am())\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 908 (callee)\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/add_drb_am() Line 997 (call new_nr_sdap_entity())\r\n-> openair2/SDAP/nr_sdap/nr_sdap_entity.c Line 389 (callee)\r\n-> openair2/SDAP/nr_sdap/nr_sdap_entity.c/new_nr_sdap_entity() Line 429 (PRINT)",
+      "line": 429
+    },
+    {
+      "file": "openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c",
+      "description": "[PDCP]   /home/UFAD/duan.c/openairinterface5g/openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c:add_drb:1032: added DRB for UE RNTI 2165\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2143 (call nr_rrc_pdcp_config_asn1_req())\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 1035 (callee)\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/nr_rrc_pdcp_config_asn1_req() Line 1079 (call add_drb())\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c Line 1009 (callee)\r\n-> openair2/LAYER2/nr_pdcp/nr_pdcp_oai_api.c/add_drb() Line 1032 (PRINT)",
+      "line": 1032
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "[RLC]   /home/UFAD/duan.c/openairinterface5g/openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c:852:add_drb_am: added drb 1 to UE with RNTI 0x2165\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2052/2157 (call nr_rrc_rlc_config_asn1_req())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 954 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/nr_rrc_rlc_config_asn1_req() Line 1008 (call add_drb())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 925 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/add_drb() Line 929 (call add_drb_am())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 775 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/add_drb_am() Line 852 (PRINT)",
+      "line": 852
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "[RLC]   /home/UFAD/duan.c/openairinterface5g/openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c:add_drb:939: added DRB to UE with RNTI 0x2165\r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2052/2157 (call nr_rrc_rlc_config_asn1_req())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 954 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/nr_rrc_rlc_config_asn1_req() Line 1008 (call add_drb())\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 925 (callee)\r\n-> openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/add_drb() Line 939 (PRINT)",
+      "line": 939
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [UE 0] State = NR_RRC_CONNECTED (gNB 0)  \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration()) \r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())\r\n-> openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)\r\n-> openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2183 (PRINT)",
+      "line": 2183
+    },
+    {
+      "file": "openair2/RRC/NR/MESSAGES/asn1_msg.c",
+      "description": "[NR_RRC]   rrcReconfigurationComplete Encoded 10 bits (2 bytes)\r\n\r\n(same as step 170)",
+      "line": 2531
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   [UE 0] Received NAS_CONN_ESTABLI_CNF: errCode 1, length 89 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 871 (PRINT)",
+      "line": 871
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "[NR_RRC]   [FRAME 00000][ UE][MOD 00][RNTI 2165] Logical Channel UL-DCCH (SRB1), Generating RRCReconfigurationComplete (bytes 2, gNB_index 0)\r\n\r\n(same as step 171)",
+      "line": 2246
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "[NAS]   Received PDU Session Establishment Accept, UE IP: 12.1.1.152 \r\n\r\nexecutables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())\r\n-> executables/nr-uesoftmodem.c Line 187 (callee)\r\n-> executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)\r\n-> openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 928 (PRINT)",
+      "line": 928
+    },
+    {
+      "file": "openair2/RRC/NAS/nas_config.c",
+      "description": "[OIP]   Interface oaitun_ue1 successfully configured, ip address 12.1.1.152, mask 255.255.255.0 broadcast address 12.1.1.255 ",
+      "line": 341
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "Iterate \"openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c line 3719\", \"openair1/PHY/NR_UE_TRANSPORT/csi_rx.c line 947\", \"openair1/SCHED_NR_UE/phy_procedures_nr_ue.c line 1481-1494\"\r\n[NR_MAC]   [510.0] Received TA_COMMAND 31 TAGID 0 CC_id 0\r\n[NR_PHY]   ============================================\r\n[NR_PHY]   Harq round stats for Downlink: 43/2/0/0\r\n[NR_PHY]   ============================================\r\n[NR_PHY]   RSRP = -45 dBm, RI = 1, i1 = 0.0.0, i2 = 0, SINR = 0 dB, CQI = 0",
+      "line": 3719
+    }
+  ]
+}

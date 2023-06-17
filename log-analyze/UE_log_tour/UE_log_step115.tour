@@ -1,0 +1,41 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 441 (call init_tpools())",
+      "line": 441      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 247 (callee)",
+      "line": 247     
+    },  
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/init_tpools() Line 254/257 (call init_dlsch_tpool())",
+      "line": 254    
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_dlsch_decoding.c",
+      "description": "openair1/PHY/NR_UE_TRANSPORT/nr_dlsch_decoding.c Line 64 (callee)",
+      "line": 64     
+    },
+    {
+      "file": "openair1/PHY/NR_UE_TRANSPORT/nr_dlsch_decoding.c",
+      "description": "openair1/PHY/NR_UE_TRANSPORT/nr_dlsch_decoding.c/init_dlsch_tpool() Line 78 (call initNamedTpool())",
+      "line": 78     
+    },
+    {
+      "file": "common/utils/threadPool/thread-pool.c",
+      "description": "common/utils/threadPool/thread-pool.c Line 95 (callee)",
+      "line": 95     
+    },
+    {
+      "file": "common/utils/threadPool/thread-pool.c",
+      "description": "common/utils/threadPool/thread-pool.c/initNamedTpool() line 136 (PRINT)",
+      "line": 136     
+    }       
+  ]
+}

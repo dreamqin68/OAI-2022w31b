@@ -1,0 +1,71 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 460 (call init_NR_UE())",
+      "line": 460     
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 1088 (callee)",
+      "line": 1088      
+    },  
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 1098 (call nr_ue_if_module_init())",
+      "line": 1098     
+    },
+    {
+      "file": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1274 (callee)",
+      "line": 1274    
+    },
+    {
+      "file": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_if_module_init() Line 1288 (call nr_ue_dl_indication())",
+      "line": 1288   
+    },
+    {
+      "file": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1167 (callee)",
+      "line": 1167
+    }, 
+    {
+      "file": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/nr_ue_dl_indication() Line 1245/1248 (call handle_dlsch())",
+      "line": 1245
+    },
+    {
+      "file": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c Line 1089 (callee)",
+      "line": 1089
+    },  
+    {
+      "file": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c",
+      "description": "openair2/NR_UE_PHY_INTERFACE/NR_IF_Module.c/handle_dlsch() Line 1101 (call nr_ue_send_sdu())",
+      "line": 1101
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 2819 (callee) ",
+      "line": 2819
+    },
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c/nr_ue_send_sdu() Line 2829 (call nr_ue_process_mac_pdu()) ",
+      "line": 2829
+    }, 
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c Line 3589 (callee) ",
+      "line": 3589
+    }, 
+    {
+      "file": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c",
+      "description": "openair2/LAYER2/NR_MAC_UE/nr_ue_procedures.c/nr_ue_process_mac_pdu() Line 3719 (PRINT) ",
+      "line": 3719
+    }
+  ]
+}

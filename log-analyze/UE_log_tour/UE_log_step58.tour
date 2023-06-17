@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())",
+      "line": 544      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 187 (callee)",
+      "line": 187      
+    },  
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/create_tasks_nrue() line 193/204 (call itti_create_task())",
+      "line": 204      
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp line 320 (callee)",
+      "line": 320      
+    },
+    {
+      "file": "common/utils/ocp_itti/intertask_interface.cpp",
+      "description": "common/utils/ocp_itti/intertask_interface.cpp line 325 (PRINT)",
+      "line": 325      
+    }           
+  ]
+}

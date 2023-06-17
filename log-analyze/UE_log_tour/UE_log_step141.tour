@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())",
+      "line": 544      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 187 (callee)",
+      "line": 187      
+    },  
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/create_tasks_nrue() Line 204 (call nas_nrue_task())",
+      "line": 204      
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "openair3/NAS/NR_UE/nr_nas_msg_sim.c Line 803 (callee)",
+      "line": 803      
+    },
+    {
+      "file": "openair3/NAS/NR_UE/nr_nas_msg_sim.c",
+      "description": "openair3/NAS/NR_UE/nr_nas_msg_sim.c/nas_nrue_task() Line 823 (call checkUicc())",
+      "line": 823      
+    },
+    {
+      "file": "openair3/UICC/usim_interface.c",
+      "description": "openair3/UICC/usim_interface.c Line 100 (callee)",
+      "line": 100      
+    },
+    {
+      "file": "openair3/UICC/usim_interface.c",
+      "description": "openair3/UICC/usim_interface.c/checkUicc() Line 108 (call init_uicc())",
+      "line": 108      
+    }, 
+    {
+      "file": "openair3/UICC/usim_interface.c",
+      "description": "openair3/UICC/usim_interface.c Line 67 (callee)",
+      "line": 67      
+    },
+    {
+      "file": "openair3/UICC/usim_interface.c",
+      "description": "openair3/UICC/usim_interface.c/init_uicc() Line 76 (PRINT)",
+      "line": 76      
+    }     
+  ]
+}

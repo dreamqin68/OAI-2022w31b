@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 423 (call load_configmodule())",
+      "line": 423      
+    },
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "common/config/config_load_configmodule.c Line 184 (callee)",
+      "line": 184     
+    },  
+    {
+      "file": "common/config/config_load_configmodule.c",
+      "description": "common/config/config_load_configmodule.c/load_configmodule() line 297 (PRINT)",
+      "line": 297     
+    }       
+  ]
+}

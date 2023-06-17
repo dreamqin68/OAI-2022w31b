@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 431 (call logInit())",
+      "line": 431      
+    },
+    {
+      "file": "common/utils/LOG/log.c",
+      "description": "common/utils/LOG/log.c Line 435 (callee)",
+      "line": 435     
+    },  
+    {
+      "file": "common/utils/LOG/log.c",
+      "description": "common/utils/LOG/log.c/logInit() line 512 (PRINT)",
+      "line": 512     
+    }      
+  ]
+}

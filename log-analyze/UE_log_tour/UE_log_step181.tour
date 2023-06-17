@@ -1,0 +1,51 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 537 (call init_NR_UE_threads())",
+      "line": 537      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 1102 (callee)",
+      "line": 1102      
+    },  
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/init_NR_UE_threads() Line 1111 (call UE_thread())",
+      "line": 1111     
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 826 (callee)",
+      "line": 826      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/UE_thread() Line 855 (call processSlotRX())",
+      "line": 855      
+    },
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c Line 647 (callee)",
+      "line": 647
+    },    
+    {
+      "file": "executables/nr-ue.c",
+      "description": "executables/nr-ue.c/processSlotRX() Line 681 (call phy_procedures_nrUE_RX())",
+      "line": 681
+    },
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c Line 1395 (callee)",
+      "line": 1395
+    }, 
+    {
+      "file": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c",
+      "description": "openair1/SCHED_NR_UE/phy_procedures_nr_ue.c/phy_procedures_nrUE_RX() line 1482 (PRINT)",
+      "line": 1482
+    }    
+  ]
+}

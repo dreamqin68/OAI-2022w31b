@@ -1,0 +1,21 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 445 (call get_cpu_freq_GHz())",
+      "line": 445      
+    },
+    {
+      "file": "common/utils/time_meas.c",
+      "description": "common/utils/time_meas.c Line 39 (callee)",
+      "line": 39     
+    },  
+    {
+      "file": "common/utils/time_meas.c",
+      "description": "common/utils/time_meas.c/get_cpu_freq_GHz() line 49 (PRINT)",
+      "line": 49    
+    }         
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "ue6",
+  "steps": [
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/main() Line 544 (call create_tasks_nrue())",
+      "line": 544      
+    },
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c Line 187 (callee)",
+      "line": 187      
+    },  
+    {
+      "file": "executables/nr-uesoftmodem.c",
+      "description": "executables/nr-uesoftmodem.c/create_tasks_nrue() Line 193 (call rrc_nrue_task())",
+      "line": 193     
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2419 (callee)",
+      "line": 2419     
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/rrc_nrue_task() Line 2488 (call nr_rrc_ue_decode_dcch())",
+      "line": 2488    
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2285 (callee)",
+      "line": 2285     
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_decode_dcch() Line 2331 (call rrc_ue_process_rrcReconfiguration())",
+      "line": 2331   
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2188 (callee)",
+      "line": 2188
+    },  
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/rrc_ue_process_rrcReconfiguration() Line 2217 (call nr_rrc_ue_process_RadioBearerConfig())",
+      "line": 2217    
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 2006 (callee)",
+      "line": 2006
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_process_RadioBearerConfig() Line 2086 (call nr_rrc_ue_establish_srb2())",
+      "line": 2086
+    },
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c Line 1816 (callee)",
+      "line": 1816
+    }, 
+    {
+      "file": "openair2/RRC/NR_UE/rrc_UE.c",
+      "description": "openair2/RRC/NR_UE/rrc_UE.c/nr_rrc_ue_establish_srb2() Line 1828 (PRINT)",
+      "line": 1828
+    }    
+  ]
+}

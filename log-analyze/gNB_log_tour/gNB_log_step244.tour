@@ -1,0 +1,81 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gNB_log_steps",
+  "steps": [
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks())",
+      "line": 672     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c Line 292 (callee)",
+      "line": 292     
+    },
+    {
+      "file": "executables/nr-softmodem.c",
+      "description": "executables/nr-softmodem.c/create_gNB_tasks() Line 357 (call rrc_gnb_task())",
+      "line": 357     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 4055 (callee)",
+      "line": 4055     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/rrc_gnb_task() Line 4129 (call nr_rrc_gNB_decode_ccch())",
+      "line": 4129     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 1997 (callee)",
+      "line": 1997     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/nr_rrc_gNB_decode_ccch() Line 2139 (call rrc_gNB_generate_RRCSetup())",
+      "line": 2139     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 319 (callee)",
+      "line": 319     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/rrc_gNB_generate_RRCSetup() Line 424 (call apply_macrlc_config())",
+      "line": 424     
+    },
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c Line 273 (callee)",
+      "line": 273     
+    }, 
+    {
+      "file": "openair2/RRC/NR/rrc_gNB.c",
+      "description": "openair2/RRC/NR/rrc_gNB.c/apply_macrlc_config() Line 290 (call nr_rrc_rlc_config_asn1_req())",
+      "line": 290     
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 954 (callee)",
+      "line": 954     
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/nr_rrc_rlc_config_asn1_req() Line 991 (call add_rlc_srb())",
+      "line": 991     
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c Line 684 (callee)",
+      "line": 684
+    },
+    {
+      "file": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c",
+      "description": "openair2/LAYER2/nr_rlc/nr_rlc_oai_api.c/add_rlc_srb() Line 770 (PRINT)",
+      "line": 770     
+    }                 
+  ]
+}
