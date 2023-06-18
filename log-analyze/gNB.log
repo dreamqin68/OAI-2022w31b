@@ -118,43 +118,43 @@
 [0m[NR_RRC]   SIB1 freq: absoluteFrequencySSB 641280, absoluteFrequencyPointA 640008   # executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks()) -> openair2/RRC/NR/MESSAGES/asn1_msg.c/do_SIB1_NR() Line 430
 [0m[NR_RRC]   SIB1 freq: absolute_diff 1272, 2*(absolute_diff/(12*2) - 10) 86          # executables/nr-softmodem.c/main() Line 672 (call create_gNB_tasks()) -> openair2/RRC/NR/MESSAGES/asn1_msg.c/do_SIB1_NR() Line 433
 
-[0mCMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf" "--sa" "--rfsim"              # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_configmodule() Line 197
-[CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf , debug flags: 0x00000000   # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_configmodule() Line 291
-[LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF          # common/config/libconfig/config_libconfig.c/config_libconfig_init() Line 366
-[CONFIG] function config_libconfig_init returned 0     # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_config_sharedlib() Line 69
-[CONFIG] config module libconfig loaded                # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_configmodule() Line 303
-[LIBCONFIG] config: 1/1 parameters successfully set, (1 to default value)        # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
-[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)    # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+[0mCMDLINE: "./nr-softmodem" "-O" "../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf" "--sa" "--rfsim"                  # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_configmodule() Line 197
+[CONFIG] get parameters from libconfig ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band78.fr1.106PRB.usrpb210.conf , debug flags: 0x00000000       # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_configmodule() Line 291
+[LIBCONFIG] Path for include directive set to: ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF                                                            # common/config/libconfig/config_libconfig.c/config_libconfig_init() Line 366
+[CONFIG] function config_libconfig_init returned 0                                                                                                          # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_config_sharedlib() Line 69
+[CONFIG] config module libconfig loaded                                                                                                                     # executables/nr-softmodem.c/main() Line 608 (call load_configmodule()) -> common/config/config_load_configmodule.c/load_configmodule() Line 303
+[LIBCONFIG] config: 1/1 parameters successfully set, (1 to default value)                                                                               # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+[LIBCONFIG] log_config: 3/3 parameters successfully set, (1 to default value)                                                                           # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
 [LIBCONFIG] log_config: 55/55 parameters successfully set, (47 to default value)
 [LIBCONFIG] log_config: 55/55 parameters successfully set, (55 to default value)
 [LIBCONFIG] log_config: 16/16 parameters successfully set, (16 to default value)
 [LIBCONFIG] log_config: 16/16 parameters successfully set, (16 to default value)
-log init done                                                                    # executables/nr-softmodem.c/main() Line 620 (call logInit()) -> common/utils/LOG/log.c/logInit() Line 512
-Reading in command-line options                                                  # executables/nr-softmodem.c/main() Line 622
-[LIBCONFIG] (root): 36/36 parameters successfully set, (32 to default value)     # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+log init done                                                                                                                                               # executables/nr-softmodem.c/main() Line 620 (call logInit()) -> common/utils/LOG/log.c/logInit() Line 512
+Reading in command-line options                                                                                                                             # executables/nr-softmodem.c/main() Line 622
+[LIBCONFIG] (root): 36/36 parameters successfully set, (32 to default value)                                                                            # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
 [LIBCONFIG] (root): 5/5 parameters successfully set, (4 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] THREAD_STRUCT.[0]: 2/2 parameters successfully set, (0 to default value)
-[CONFIG] parallel_conf is set to 0                                               # executables/nr-softmodem.c/main() Line 623 (call get_options()) -> executables/thread-common.h Line 18
-[CONFIG] worker_conf is set to 1                                                 # executables/nr-softmodem.c/main() Line 623 (call get_options()) -> executables/thread-common.h Line 31
-Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1                           # executables/nr-softmodem.c/main() Line 623 (call get_options()) -> executables/nr-softmodem.c/get_options() Line 388
-[LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)       # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
-configuring for RAU/RRU                                                          # executables/nr-softmodem.c/main() Line 647
-CPU Freq is 1.991848                                                             # executables/nr-softmodem.c/main() Line 653 (call get_cpu_freq_GHz()) -> common/utils/time_meas.c/get_cpu_freq_GHz() Line 49
-[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)           # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+[CONFIG] parallel_conf is set to 0                                                                                                                          # executables/nr-softmodem.c/main() Line 623 (call get_options()) -> executables/thread-common.h Line 18
+[CONFIG] worker_conf is set to 1                                                                                                                            # executables/nr-softmodem.c/main() Line 623 (call get_options()) -> executables/thread-common.h Line 31
+Configuration: nb_rrc_inst 1, nb_nr_L1_inst 1, nb_ru 1                                                                                                      # executables/nr-softmodem.c/main() Line 623 (call get_options()) -> executables/nr-softmodem.c/get_options() Line 388
+[LIBCONFIG] TTracer: 4/4 parameters successfully set, (4 to default value)                                                                              # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+configuring for RAU/RRU                                                                                                                                     # executables/nr-softmodem.c/main() Line 647
+CPU Freq is 1.991848                                                                                                                                        # executables/nr-softmodem.c/main() Line 653 (call get_cpu_freq_GHz()) -> common/utils/time_meas.c/get_cpu_freq_GHz() Line 49
+[LIBCONFIG] opt: 3/3 parameters successfully set, (3 to default value)                                                                                  # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
 [LIBCONFIG] L1s.[0]: 15/15 parameters successfully set, (10 to default value)
-Initializing northbound interface for L1                                         # openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 771
-[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (1 to default value)      # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+Initializing northbound interface for L1                                                                                                                # openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 771
+[LIBCONFIG] eNBs.[0]: 1/1 parameters successfully set, (1 to default value)                                                                             # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
 [LIBCONFIG] gNBs.[0]: 1/1 parameters successfully set, (1 to default value)
 [LIBCONFIG] gNBs.[0].NETWORK_INTERFACES: 10/10 parameters successfully set, (3 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
 [LIBCONFIG] L1s.[0]: 15/15 parameters successfully set, (10 to default value)
-Initializing northbound interface for L1                                         # openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 771
-[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)        # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+Initializing northbound interface for L1                                                                                                                # openair2/GNB_APP/gnb_config.c/RCconfig_NR_L1() Line 771
+[LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)                                                                               # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
 [LIBCONFIG] MACRLCs.[0]: 33/33 parameters successfully set, (26 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
@@ -162,8 +162,8 @@ Initializing northbound interface for L1                                        
 [LIBCONFIG] gNBs.[0].pdcch_ConfigSIB1.[0]: 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0].servingCellConfigCommon.[0]: 60/60 parameters successfully set, (9 to default value)
 [LIBCONFIG] gNBs.[0].servingCellConfigDedicated.[0]: 42/42 parameters successfully set, (21 to default value)
-NRRRC 0: Southbound Transport local_mac                                                     # openair2/GNB_APP/gnb_config.c/RCconfig_NRRRC() Line 1147
-[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)   # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
+NRRRC 0: Southbound Transport local_mac                                                                                                                 # openair2/GNB_APP/gnb_config.c/RCconfig_NRRRC() Line 1147
+[LIBCONFIG] gNBs.[0].plmn_list.[0]: 3/3 parameters successfully set, (0 to default value)                                                               # common/config/libconfig/config_libconfig.c/config_libconfig_get() Line 267
 [LIBCONFIG] security: 4/4 parameters successfully set, (0 to default value)
 [LIBCONFIG] (root): 2/2 parameters successfully set, (0 to default value)
 [LIBCONFIG] gNBs.[0]: 27/27 parameters successfully set, (18 to default value)
