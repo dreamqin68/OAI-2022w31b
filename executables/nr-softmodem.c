@@ -688,11 +688,11 @@ int main( int argc, char **argv ) {
   pthread_mutex_init(&sync_mutex, NULL);
   usleep(1000);
 
-  if (NFAPI_MODE) {
-    printf("NFAPI*** - mutex and cond created - will block shortly for completion of PNF connection\n");
-    pthread_cond_init(&sync_cond,NULL);
-    pthread_mutex_init(&sync_mutex, NULL);
-  }
+  //if (NFAPI_MODE) {
+  //  printf("NFAPI*** - mutex and cond created - will block shortly for completion of PNF connection\n");
+  //  pthread_cond_init(&sync_cond,NULL);
+  //  pthread_mutex_init(&sync_mutex, NULL);
+  //}     // cannot find line 692 in the gNB log, means this part is not run, NFAPI_MODE = false.
 
   const char *nfapi_mode_str = "<UNKNOWN>";
 
@@ -798,6 +798,11 @@ int main( int argc, char **argv ) {
   //getchar();
   printf("Entering ITTI signals handler\n");
   itti_wait_tasks_end();
+
+/////////////////////////////////////////////////////////////////////////////////////
+// The following part may bot be run since we cannot find the content in the printfs
+/////////////////////////////////////////////////////////////////////////////////////
+	
   printf("Returned from ITTI signal handler\n");
   oai_exit=1;
   printf("oai_exit=%d\n",oai_exit);
